@@ -1,3 +1,8 @@
+"""
+Welcome to Challege One!
+Please follow the instructions in the docstrings of each Task method.
+"""
+
 stringToBeReversed = 'you_need_to_reverse_this_string'
 unorderedList = ['Hello', 'World', 'Cisco', 'Jam' , 'Spark', 'Bot', 'Challenge',
                  'Put', 'This', 'List', 'In', 'Alphabetical', 'Order']
@@ -14,8 +19,11 @@ def main():
     sortedFilteredPalindromes = taskThree_filter_palindromes(possible_palindromes)
     print "Task 3: Printing Filtered Palindromes: " + str(sortedFilteredPalindromes)
 
-# Write the method that will reverse a string passed in as a parameter.
 def taskOne_reverse_string(stringToBeReversed):
+    """
+    Write a method that will reverse a string passed in as a parameter,
+    and return it.
+    """
     originalString = stringToBeReversed
     reversedString = ""
     stringLen      = len(originalString)
@@ -27,6 +35,12 @@ def taskOne_reverse_string(stringToBeReversed):
 
 # Complete the method to sort a list of words into alphabetical order.
 def taskTwo_sort_list(unorderedList):
+    """
+    Write a method that will sort a list of words into alphabetical order,
+    and returns the list.
+    Hint: Use your sorting algorithm knowledge.
+    No points for using .sorted()
+    """
     for word_index in range(len(unorderedList) - 1, 0, -1):
         for i in range(word_index):
             if unorderedList[i] > unorderedList[i+1]:
@@ -37,6 +51,11 @@ def taskTwo_sort_list(unorderedList):
     return unorderedList
 
 def taskThree_filter_palindromes(possible_palindromes):
+    """
+    Write a method that removes the numbers from the strings
+    in the method parameter list. Filter which of the strings
+    are palindromes.
+    """
     removed_numbers = []
     palindromes = []
 
