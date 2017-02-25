@@ -45,9 +45,11 @@ class CiscoJamStack:
                  item can be popped.
         '''
         if not self.isEmpty():
-            return self.items.pop()
-        else:
-            return False
+            #return self.items.pop() <-- simple way, another would be with a counter.
+            item = self.items[self.size() - 1]
+            self.items.remove(item)
+            return item
+        return False
 
     def peek(self):
         '''
@@ -69,5 +71,4 @@ class CiscoJamStack:
         Returns the maximum size of the stack.
         :return: Returns a max int.
         '''
-
         return MAX_STACK_SIZE
