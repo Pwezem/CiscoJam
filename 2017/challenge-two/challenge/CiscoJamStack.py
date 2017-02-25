@@ -38,6 +38,7 @@ class CiscoJamStack:
                  false if item was not added.
         '''
         if self.size() < MAX_STACK_SIZE:
+            pass # remove pass and begin your coding.
 
 
 
