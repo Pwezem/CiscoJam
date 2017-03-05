@@ -1,0 +1,1848 @@
+[2017-03-02 10:47:52,482]:INFO: ******************************************
+[2017-03-02 10:47:52,482]:INFO: ** Starting Test 100 start_vote command **
+[2017-03-02 10:47:52,482]:INFO: ******************************************
+[2017-03-02 10:47:52,482]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 10:47:52,482]:INFO: Asserting the json
+[2017-03-02 10:47:52,482]:INFO: ***********************
+[2017-03-02 10:47:52,482]:INFO: ** Finished Test 100 **
+[2017-03-02 10:47:52,483]:INFO: ***********************
+
+[2017-03-02 10:47:52,483]:INFO: ********************************************
+[2017-03-02 10:47:52,483]:INFO: ** Starting Test 101 start_vote camelcase **
+[2017-03-02 10:47:52,484]:INFO: ********************************************
+[2017-03-02 10:47:52,484]:INFO: Asserting start_vote as "sTaRt_vOte" has return expected results
+[2017-03-02 10:47:52,484]:INFO: Asserting the json
+[2017-03-02 10:47:52,484]:INFO: ***********************
+[2017-03-02 10:47:52,484]:INFO: ** Finished Test 101 **
+[2017-03-02 10:47:52,484]:INFO: ***********************
+
+[2017-03-02 10:47:52,485]:INFO: ***********************************************
+[2017-03-02 10:47:52,485]:INFO: ** Starting Test 102 start_vote with options **
+[2017-03-02 10:47:52,485]:INFO: ***********************************************
+[2017-03-02 10:47:52,485]:INFO: Asserting start_vote as "start_vote test1, test2, test3" has return expected results
+[2017-03-02 10:47:52,485]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 10:47:52,485]:INFO: ***********************
+[2017-03-02 10:47:52,486]:INFO: ** Finished Test 102 **
+[2017-03-02 10:47:52,486]:INFO: ***********************
+
+[2017-03-02 10:47:52,486]:INFO: ***************************************************
+[2017-03-02 10:47:52,486]:INFO: ** Starting Test 103 start_vote with one option. **
+[2017-03-02 10:47:52,486]:INFO: ***************************************************
+[2017-03-02 10:47:52,486]:INFO: Asserting start_vote as "start_vote test1" has return expected results
+[2017-03-02 10:47:52,486]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 10:47:52,487]:INFO: ***********************
+[2017-03-02 10:47:52,487]:INFO: ** Finished Test 103 **
+[2017-03-02 10:47:52,487]:INFO: ***********************
+
+[2017-03-02 10:47:52,487]:INFO: ****************************************************
+[2017-03-02 10:47:52,487]:INFO: ** Starting Test 104 vote command with vote cast. **
+[2017-03-02 10:47:52,487]:INFO: ****************************************************
+[2017-03-02 11:00:36,763]:INFO: ******************************************
+[2017-03-02 11:00:36,763]:INFO: ** Starting Test 100 start_vote command **
+[2017-03-02 11:00:36,763]:INFO: ******************************************
+[2017-03-02 11:00:36,763]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:00:36,763]:INFO: Asserting the json
+[2017-03-02 11:00:36,763]:INFO: ***********************
+[2017-03-02 11:00:36,763]:INFO: ** Finished Test 100 **
+[2017-03-02 11:00:36,764]:INFO: ***********************
+
+[2017-03-02 11:00:36,765]:INFO: ********************************************
+[2017-03-02 11:00:36,765]:INFO: ** Starting Test 101 start_vote camelcase **
+[2017-03-02 11:00:36,765]:INFO: ********************************************
+[2017-03-02 11:00:36,766]:INFO: Asserting start_vote as "sTaRt_vOte" has return expected results
+[2017-03-02 11:00:36,766]:INFO: Asserting the json
+[2017-03-02 11:00:36,766]:INFO: ***********************
+[2017-03-02 11:00:36,767]:INFO: ** Finished Test 101 **
+[2017-03-02 11:00:36,767]:INFO: ***********************
+
+[2017-03-02 11:00:36,767]:INFO: ***********************************************
+[2017-03-02 11:00:36,767]:INFO: ** Starting Test 102 start_vote with options **
+[2017-03-02 11:00:36,768]:INFO: ***********************************************
+[2017-03-02 11:00:36,768]:INFO: Asserting start_vote as "start_vote test1, test2, test3" has return expected results
+[2017-03-02 11:00:36,769]:INFO: ***************************************************
+[2017-03-02 11:00:36,769]:INFO: ** Starting Test 103 start_vote with one option. **
+[2017-03-02 11:00:36,769]:INFO: ***************************************************
+[2017-03-02 11:00:36,769]:INFO: Asserting start_vote as "start_vote test1" has return expected results
+[2017-03-02 11:00:36,769]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:00:36,769]:INFO: ***********************
+[2017-03-02 11:00:36,769]:INFO: ** Finished Test 103 **
+[2017-03-02 11:00:36,769]:INFO: ***********************
+
+[2017-03-02 11:00:36,770]:INFO: *******************************************************
+[2017-03-02 11:00:36,770]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-02 11:00:36,770]:INFO: *******************************************************
+[2017-03-02 11:00:36,770]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:00:36,770]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:00:36,770]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 11:00:36,771]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:01:08,617]:INFO: ******************************************
+[2017-03-02 11:01:08,617]:INFO: ** Starting Test 100 start_vote command **
+[2017-03-02 11:01:08,617]:INFO: ******************************************
+[2017-03-02 11:01:08,617]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:01:08,617]:INFO: Asserting the json
+[2017-03-02 11:01:08,617]:INFO: ***********************
+[2017-03-02 11:01:08,617]:INFO: ** Finished Test 100 **
+[2017-03-02 11:01:08,618]:INFO: ***********************
+
+[2017-03-02 11:01:08,618]:INFO: ********************************************
+[2017-03-02 11:01:08,618]:INFO: ** Starting Test 101 start_vote camelcase **
+[2017-03-02 11:01:08,619]:INFO: ********************************************
+[2017-03-02 11:01:08,619]:INFO: Asserting start_vote as "sTaRt_vOte" has return expected results
+[2017-03-02 11:01:08,619]:INFO: Asserting the json
+[2017-03-02 11:01:08,619]:INFO: ***********************
+[2017-03-02 11:01:08,619]:INFO: ** Finished Test 101 **
+[2017-03-02 11:01:08,619]:INFO: ***********************
+
+[2017-03-02 11:01:08,621]:INFO: ***********************************************
+[2017-03-02 11:01:08,621]:INFO: ** Starting Test 102 start_vote with options **
+[2017-03-02 11:01:08,621]:INFO: ***********************************************
+[2017-03-02 11:01:08,625]:INFO: Asserting start_vote as "start_vote test1, test2, test3" has return expected results
+[2017-03-02 11:01:08,626]:INFO: ***************************************************
+[2017-03-02 11:01:08,626]:INFO: ** Starting Test 103 start_vote with one option. **
+[2017-03-02 11:01:08,626]:INFO: ***************************************************
+[2017-03-02 11:01:08,626]:INFO: Asserting start_vote as "start_vote test1" has return expected results
+[2017-03-02 11:01:08,627]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:01:08,627]:INFO: ***********************
+[2017-03-02 11:01:08,627]:INFO: ** Finished Test 103 **
+[2017-03-02 11:01:08,627]:INFO: ***********************
+
+[2017-03-02 11:01:08,627]:INFO: *******************************************************
+[2017-03-02 11:01:08,627]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-02 11:01:08,627]:INFO: *******************************************************
+[2017-03-02 11:01:08,628]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:01:08,628]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:01:08,628]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 11:01:08,628]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:06:01,411]:INFO: ******************************************
+[2017-03-02 11:06:01,411]:INFO: ** Starting Test 100 start_vote command **
+[2017-03-02 11:06:01,411]:INFO: ******************************************
+[2017-03-02 11:06:01,411]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:06:01,411]:INFO: Asserting the json
+[2017-03-02 11:06:01,412]:INFO: ***********************
+[2017-03-02 11:06:01,412]:INFO: ** Finished Test 100 **
+[2017-03-02 11:06:01,412]:INFO: ***********************
+
+[2017-03-02 11:06:01,412]:INFO: ********************************************
+[2017-03-02 11:06:01,412]:INFO: ** Starting Test 101 start_vote camelcase **
+[2017-03-02 11:06:01,412]:INFO: ********************************************
+[2017-03-02 11:06:01,413]:INFO: Asserting start_vote as "sTaRt_vOte" has return expected results
+[2017-03-02 11:06:01,413]:INFO: Asserting the json
+[2017-03-02 11:06:01,413]:INFO: ***********************
+[2017-03-02 11:06:01,413]:INFO: ** Finished Test 101 **
+[2017-03-02 11:06:01,413]:INFO: ***********************
+
+[2017-03-02 11:06:01,414]:INFO: ***********************************************
+[2017-03-02 11:06:01,414]:INFO: ** Starting Test 102 start_vote with options **
+[2017-03-02 11:06:01,414]:INFO: ***********************************************
+[2017-03-02 11:06:01,414]:INFO: Asserting start_vote as "start_vote test1, test2, test3" has return expected results
+[2017-03-02 11:06:01,414]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:06:01,414]:INFO: ***********************
+[2017-03-02 11:06:01,414]:INFO: ** Finished Test 102 **
+[2017-03-02 11:06:01,415]:INFO: ***********************
+
+[2017-03-02 11:06:01,415]:INFO: ***************************************************
+[2017-03-02 11:06:01,415]:INFO: ** Starting Test 103 start_vote with one option. **
+[2017-03-02 11:06:01,415]:INFO: ***************************************************
+[2017-03-02 11:06:01,415]:INFO: Asserting start_vote as "start_vote test1" has return expected results
+[2017-03-02 11:06:01,415]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:06:01,415]:INFO: ***********************
+[2017-03-02 11:06:01,415]:INFO: ** Finished Test 103 **
+[2017-03-02 11:06:01,415]:INFO: ***********************
+
+[2017-03-02 11:06:01,416]:INFO: *******************************************************
+[2017-03-02 11:06:01,416]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-02 11:06:01,416]:INFO: *******************************************************
+[2017-03-02 11:06:01,416]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:06:01,417]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:06:01,417]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 11:06:01,417]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:08:02,374]:INFO: ******************************************
+[2017-03-02 11:08:02,374]:INFO: ** Starting Test 100 start_vote command **
+[2017-03-02 11:08:02,374]:INFO: ******************************************
+[2017-03-02 11:08:02,375]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:08:02,375]:INFO: Asserting the json
+[2017-03-02 11:08:02,375]:INFO: ***********************
+[2017-03-02 11:08:02,375]:INFO: ** Finished Test 100 **
+[2017-03-02 11:08:02,375]:INFO: ***********************
+
+[2017-03-02 11:08:02,376]:INFO: ********************************************
+[2017-03-02 11:08:02,376]:INFO: ** Starting Test 101 start_vote camelcase **
+[2017-03-02 11:08:02,376]:INFO: ********************************************
+[2017-03-02 11:08:02,377]:INFO: Asserting start_vote as "sTaRt_vOte" has return expected results
+[2017-03-02 11:08:02,377]:INFO: Asserting the json
+[2017-03-02 11:08:02,377]:INFO: ***********************
+[2017-03-02 11:08:02,377]:INFO: ** Finished Test 101 **
+[2017-03-02 11:08:02,377]:INFO: ***********************
+
+[2017-03-02 11:08:02,378]:INFO: ***********************************************
+[2017-03-02 11:08:02,378]:INFO: ** Starting Test 102 start_vote with options **
+[2017-03-02 11:08:02,378]:INFO: ***********************************************
+[2017-03-02 11:08:02,378]:INFO: Asserting start_vote as "start_vote test1, test2, test3" has return expected results
+[2017-03-02 11:08:02,378]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:08:02,379]:INFO: ***********************
+[2017-03-02 11:08:02,379]:INFO: ** Finished Test 102 **
+[2017-03-02 11:08:02,379]:INFO: ***********************
+
+[2017-03-02 11:08:02,379]:INFO: ***************************************************
+[2017-03-02 11:08:02,379]:INFO: ** Starting Test 103 start_vote with one option. **
+[2017-03-02 11:08:02,380]:INFO: ***************************************************
+[2017-03-02 11:08:02,380]:INFO: Asserting start_vote as "start_vote test1" has return expected results
+[2017-03-02 11:08:02,380]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:08:02,380]:INFO: ***********************
+[2017-03-02 11:08:02,380]:INFO: ** Finished Test 103 **
+[2017-03-02 11:08:02,380]:INFO: ***********************
+
+[2017-03-02 11:08:02,380]:INFO: *******************************************************
+[2017-03-02 11:08:02,380]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-02 11:08:02,380]:INFO: *******************************************************
+[2017-03-02 11:08:02,381]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:08:02,381]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:08:02,381]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 11:08:02,381]:INFO: Asserting vote as "vote " has return expected results
+[2017-03-02 11:08:42,326]:INFO: ******************************************
+[2017-03-02 11:08:42,326]:INFO: ** Starting Test 100 start_vote command **
+[2017-03-02 11:08:42,326]:INFO: ******************************************
+[2017-03-02 11:08:42,326]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:08:42,326]:INFO: Asserting the json
+[2017-03-02 11:08:42,327]:INFO: ***********************
+[2017-03-02 11:08:42,327]:INFO: ** Finished Test 100 **
+[2017-03-02 11:08:42,327]:INFO: ***********************
+
+[2017-03-02 11:08:42,328]:INFO: ********************************************
+[2017-03-02 11:08:42,328]:INFO: ** Starting Test 101 start_vote camelcase **
+[2017-03-02 11:08:42,328]:INFO: ********************************************
+[2017-03-02 11:08:42,329]:INFO: Asserting start_vote as "sTaRt_vOte" has return expected results
+[2017-03-02 11:08:42,329]:INFO: Asserting the json
+[2017-03-02 11:08:42,329]:INFO: ***********************
+[2017-03-02 11:08:42,329]:INFO: ** Finished Test 101 **
+[2017-03-02 11:08:42,329]:INFO: ***********************
+
+[2017-03-02 11:08:42,330]:INFO: ***********************************************
+[2017-03-02 11:08:42,330]:INFO: ** Starting Test 102 start_vote with options **
+[2017-03-02 11:08:42,330]:INFO: ***********************************************
+[2017-03-02 11:08:42,331]:INFO: Asserting start_vote as "start_vote test1, test2, test3" has return expected results
+[2017-03-02 11:08:42,331]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:08:42,331]:INFO: ***********************
+[2017-03-02 11:08:42,331]:INFO: ** Finished Test 102 **
+[2017-03-02 11:08:42,331]:INFO: ***********************
+
+[2017-03-02 11:08:42,332]:INFO: ***************************************************
+[2017-03-02 11:08:42,332]:INFO: ** Starting Test 103 start_vote with one option. **
+[2017-03-02 11:08:42,332]:INFO: ***************************************************
+[2017-03-02 11:08:42,332]:INFO: Asserting start_vote as "start_vote test1" has return expected results
+[2017-03-02 11:08:42,332]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:08:42,332]:INFO: ***********************
+[2017-03-02 11:08:42,332]:INFO: ** Finished Test 103 **
+[2017-03-02 11:08:42,332]:INFO: ***********************
+
+[2017-03-02 11:08:42,333]:INFO: *******************************************************
+[2017-03-02 11:08:42,333]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-02 11:08:42,333]:INFO: *******************************************************
+[2017-03-02 11:08:42,333]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:08:42,333]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:08:42,333]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 11:08:42,333]:INFO: Asserting vote as "vote " has return expected results
+[2017-03-02 11:09:11,069]:INFO: ******************************************
+[2017-03-02 11:09:11,069]:INFO: ** Starting Test 100 start_vote command **
+[2017-03-02 11:09:11,069]:INFO: ******************************************
+[2017-03-02 11:09:11,069]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:09:11,069]:INFO: Asserting the json
+[2017-03-02 11:09:11,070]:INFO: ***********************
+[2017-03-02 11:09:11,070]:INFO: ** Finished Test 100 **
+[2017-03-02 11:09:11,070]:INFO: ***********************
+
+[2017-03-02 11:09:11,074]:INFO: ********************************************
+[2017-03-02 11:09:11,074]:INFO: ** Starting Test 101 start_vote camelcase **
+[2017-03-02 11:09:11,074]:INFO: ********************************************
+[2017-03-02 11:09:11,075]:INFO: Asserting start_vote as "sTaRt_vOte" has return expected results
+[2017-03-02 11:09:11,075]:INFO: Asserting the json
+[2017-03-02 11:09:11,075]:INFO: ***********************
+[2017-03-02 11:09:11,075]:INFO: ** Finished Test 101 **
+[2017-03-02 11:09:11,075]:INFO: ***********************
+
+[2017-03-02 11:09:11,076]:INFO: ***********************************************
+[2017-03-02 11:09:11,076]:INFO: ** Starting Test 102 start_vote with options **
+[2017-03-02 11:09:11,076]:INFO: ***********************************************
+[2017-03-02 11:09:11,076]:INFO: Asserting start_vote as "start_vote test1, test2, test3" has return expected results
+[2017-03-02 11:09:11,076]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:09:11,076]:INFO: ***********************
+[2017-03-02 11:09:11,076]:INFO: ** Finished Test 102 **
+[2017-03-02 11:09:11,077]:INFO: ***********************
+
+[2017-03-02 11:09:11,077]:INFO: ***************************************************
+[2017-03-02 11:09:11,077]:INFO: ** Starting Test 103 start_vote with one option. **
+[2017-03-02 11:09:11,077]:INFO: ***************************************************
+[2017-03-02 11:09:11,077]:INFO: Asserting start_vote as "start_vote test1" has return expected results
+[2017-03-02 11:09:11,077]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:09:11,078]:INFO: ***********************
+[2017-03-02 11:09:11,078]:INFO: ** Finished Test 103 **
+[2017-03-02 11:09:11,078]:INFO: ***********************
+
+[2017-03-02 11:09:11,078]:INFO: *******************************************************
+[2017-03-02 11:09:11,078]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-02 11:09:11,078]:INFO: *******************************************************
+[2017-03-02 11:09:11,079]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:09:11,079]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:09:11,079]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 11:09:11,079]:INFO: Asserting vote as "vote " has return expected results
+[2017-03-02 11:15:32,155]:INFO: ******************************************
+[2017-03-02 11:15:32,155]:INFO: ** Starting Test 100 start_vote command **
+[2017-03-02 11:15:32,155]:INFO: ******************************************
+[2017-03-02 11:15:32,155]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:15:32,155]:INFO: Asserting the json
+[2017-03-02 11:15:32,156]:INFO: ***********************
+[2017-03-02 11:15:32,156]:INFO: ** Finished Test 100 **
+[2017-03-02 11:15:32,156]:INFO: ***********************
+
+[2017-03-02 11:15:32,156]:INFO: ********************************************
+[2017-03-02 11:15:32,157]:INFO: ** Starting Test 101 start_vote camelcase **
+[2017-03-02 11:15:32,157]:INFO: ********************************************
+[2017-03-02 11:15:32,159]:INFO: Asserting start_vote as "sTaRt_vOte" has return expected results
+[2017-03-02 11:15:32,159]:INFO: Asserting the json
+[2017-03-02 11:15:32,159]:INFO: ***********************
+[2017-03-02 11:15:32,159]:INFO: ** Finished Test 101 **
+[2017-03-02 11:15:32,159]:INFO: ***********************
+
+[2017-03-02 11:15:32,160]:INFO: ***********************************************
+[2017-03-02 11:15:32,160]:INFO: ** Starting Test 102 start_vote with options **
+[2017-03-02 11:15:32,160]:INFO: ***********************************************
+[2017-03-02 11:15:32,161]:INFO: Asserting start_vote as "start_vote test1, test2, test3" has return expected results
+[2017-03-02 11:15:32,161]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:15:32,161]:INFO: ***********************
+[2017-03-02 11:15:32,161]:INFO: ** Finished Test 102 **
+[2017-03-02 11:15:32,161]:INFO: ***********************
+
+[2017-03-02 11:15:32,162]:INFO: ***************************************************
+[2017-03-02 11:15:32,162]:INFO: ** Starting Test 103 start_vote with one option. **
+[2017-03-02 11:15:32,162]:INFO: ***************************************************
+[2017-03-02 11:15:32,162]:INFO: Asserting start_vote as "start_vote test1" has return expected results
+[2017-03-02 11:15:32,162]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:15:32,162]:INFO: ***********************
+[2017-03-02 11:15:32,162]:INFO: ** Finished Test 103 **
+[2017-03-02 11:15:32,162]:INFO: ***********************
+
+[2017-03-02 11:15:32,162]:INFO: *******************************************************
+[2017-03-02 11:15:32,163]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-02 11:15:32,163]:INFO: *******************************************************
+[2017-03-02 11:15:32,163]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:15:32,163]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:15:32,164]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 11:15:32,164]:INFO: Asserting vote as "vote " has return expected results
+[2017-03-02 11:15:32,164]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:15:32,164]:INFO: ***********************
+[2017-03-02 11:15:32,164]:INFO: ** Finished Test 104 **
+[2017-03-02 11:15:32,164]:INFO: ***********************
+
+[2017-03-02 11:15:32,164]:INFO: *******************************************************
+[2017-03-02 11:15:32,164]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-02 11:15:32,164]:INFO: *******************************************************
+[2017-03-02 11:15:32,165]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:15:32,165]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:15:32,165]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 11:15:32,165]:INFO: Asserting vote as "yes " has return expected results
+[2017-03-02 11:16:31,527]:INFO: ******************************************
+[2017-03-02 11:16:31,527]:INFO: ** Starting Test 100 start_vote command **
+[2017-03-02 11:16:31,527]:INFO: ******************************************
+[2017-03-02 11:16:31,528]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:16:31,528]:INFO: Asserting the json
+[2017-03-02 11:16:31,528]:INFO: ***********************
+[2017-03-02 11:16:31,528]:INFO: ** Finished Test 100 **
+[2017-03-02 11:16:31,528]:INFO: ***********************
+
+[2017-03-02 11:16:31,529]:INFO: ********************************************
+[2017-03-02 11:16:31,529]:INFO: ** Starting Test 101 start_vote camelcase **
+[2017-03-02 11:16:31,529]:INFO: ********************************************
+[2017-03-02 11:16:31,530]:INFO: Asserting start_vote as "sTaRt_vOte" has return expected results
+[2017-03-02 11:16:31,530]:INFO: Asserting the json
+[2017-03-02 11:16:31,530]:INFO: ***********************
+[2017-03-02 11:16:31,530]:INFO: ** Finished Test 101 **
+[2017-03-02 11:16:31,530]:INFO: ***********************
+
+[2017-03-02 11:16:31,531]:INFO: ***********************************************
+[2017-03-02 11:16:31,531]:INFO: ** Starting Test 102 start_vote with options **
+[2017-03-02 11:16:31,531]:INFO: ***********************************************
+[2017-03-02 11:16:31,531]:INFO: Asserting start_vote as "start_vote test1, test2, test3" has return expected results
+[2017-03-02 11:16:31,531]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:16:31,532]:INFO: ***********************
+[2017-03-02 11:16:31,532]:INFO: ** Finished Test 102 **
+[2017-03-02 11:16:31,532]:INFO: ***********************
+
+[2017-03-02 11:16:31,532]:INFO: ***************************************************
+[2017-03-02 11:16:31,532]:INFO: ** Starting Test 103 start_vote with one option. **
+[2017-03-02 11:16:31,532]:INFO: ***************************************************
+[2017-03-02 11:16:31,532]:INFO: Asserting start_vote as "start_vote test1" has return expected results
+[2017-03-02 11:16:31,532]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:16:31,533]:INFO: ***********************
+[2017-03-02 11:16:31,533]:INFO: ** Finished Test 103 **
+[2017-03-02 11:16:31,533]:INFO: ***********************
+
+[2017-03-02 11:16:31,533]:INFO: *******************************************************
+[2017-03-02 11:16:31,533]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-02 11:16:31,533]:INFO: *******************************************************
+[2017-03-02 11:16:31,534]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:16:31,534]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:16:31,534]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 11:16:31,534]:INFO: Asserting vote as "vote " has return expected results
+[2017-03-02 11:16:31,534]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:16:31,534]:INFO: ***********************
+[2017-03-02 11:16:31,534]:INFO: ** Finished Test 104 **
+[2017-03-02 11:16:31,534]:INFO: ***********************
+
+[2017-03-02 11:16:31,535]:INFO: *******************************************************
+[2017-03-02 11:16:31,535]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-02 11:16:31,535]:INFO: *******************************************************
+[2017-03-02 11:16:31,536]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:16:31,536]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:16:31,536]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 11:16:31,536]:INFO: Asserting vote as "yes " has return expected results
+[2017-03-02 11:16:54,744]:INFO: ******************************************
+[2017-03-02 11:16:54,744]:INFO: ** Starting Test 100 start_vote command **
+[2017-03-02 11:16:54,744]:INFO: ******************************************
+[2017-03-02 11:16:54,744]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:16:54,744]:INFO: Asserting the json
+[2017-03-02 11:16:54,744]:INFO: ***********************
+[2017-03-02 11:16:54,744]:INFO: ** Finished Test 100 **
+[2017-03-02 11:16:54,744]:INFO: ***********************
+
+[2017-03-02 11:16:54,752]:INFO: ********************************************
+[2017-03-02 11:16:54,752]:INFO: ** Starting Test 101 start_vote camelcase **
+[2017-03-02 11:16:54,752]:INFO: ********************************************
+[2017-03-02 11:16:54,753]:INFO: Asserting start_vote as "sTaRt_vOte" has return expected results
+[2017-03-02 11:16:54,753]:INFO: Asserting the json
+[2017-03-02 11:16:54,753]:INFO: ***********************
+[2017-03-02 11:16:54,753]:INFO: ** Finished Test 101 **
+[2017-03-02 11:16:54,753]:INFO: ***********************
+
+[2017-03-02 11:16:54,753]:INFO: ***********************************************
+[2017-03-02 11:16:54,753]:INFO: ** Starting Test 102 start_vote with options **
+[2017-03-02 11:16:54,754]:INFO: ***********************************************
+[2017-03-02 11:16:54,754]:INFO: Asserting start_vote as "start_vote test1, test2, test3" has return expected results
+[2017-03-02 11:16:54,754]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:16:54,754]:INFO: ***********************
+[2017-03-02 11:16:54,754]:INFO: ** Finished Test 102 **
+[2017-03-02 11:16:54,754]:INFO: ***********************
+
+[2017-03-02 11:16:54,755]:INFO: ***************************************************
+[2017-03-02 11:16:54,755]:INFO: ** Starting Test 103 start_vote with one option. **
+[2017-03-02 11:16:54,755]:INFO: ***************************************************
+[2017-03-02 11:16:54,755]:INFO: Asserting start_vote as "start_vote test1" has return expected results
+[2017-03-02 11:16:54,755]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:16:54,755]:INFO: ***********************
+[2017-03-02 11:16:54,755]:INFO: ** Finished Test 103 **
+[2017-03-02 11:16:54,755]:INFO: ***********************
+
+[2017-03-02 11:16:54,756]:INFO: *******************************************************
+[2017-03-02 11:16:54,756]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-02 11:16:54,756]:INFO: *******************************************************
+[2017-03-02 11:16:54,758]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:16:54,758]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:16:54,758]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 11:16:54,758]:INFO: Asserting vote as "vote " has return expected results
+[2017-03-02 11:16:54,758]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:16:54,758]:INFO: ***********************
+[2017-03-02 11:16:54,758]:INFO: ** Finished Test 104 **
+[2017-03-02 11:16:54,758]:INFO: ***********************
+
+[2017-03-02 11:16:54,760]:INFO: *******************************************************
+[2017-03-02 11:16:54,760]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-02 11:16:54,760]:INFO: *******************************************************
+[2017-03-02 11:16:54,760]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:16:54,761]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:16:54,761]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 11:16:54,761]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 11:17:20,129]:INFO: ******************************************
+[2017-03-02 11:17:20,130]:INFO: ** Starting Test 100 start_vote command **
+[2017-03-02 11:17:20,130]:INFO: ******************************************
+[2017-03-02 11:17:20,130]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:17:20,130]:INFO: Asserting the json
+[2017-03-02 11:17:20,130]:INFO: ***********************
+[2017-03-02 11:17:20,130]:INFO: ** Finished Test 100 **
+[2017-03-02 11:17:20,130]:INFO: ***********************
+
+[2017-03-02 11:17:20,132]:INFO: ********************************************
+[2017-03-02 11:17:20,132]:INFO: ** Starting Test 101 start_vote camelcase **
+[2017-03-02 11:17:20,132]:INFO: ********************************************
+[2017-03-02 11:17:20,132]:INFO: Asserting start_vote as "sTaRt_vOte" has return expected results
+[2017-03-02 11:17:20,133]:INFO: Asserting the json
+[2017-03-02 11:17:20,133]:INFO: ***********************
+[2017-03-02 11:17:20,133]:INFO: ** Finished Test 101 **
+[2017-03-02 11:17:20,133]:INFO: ***********************
+
+[2017-03-02 11:17:20,133]:INFO: ***********************************************
+[2017-03-02 11:17:20,133]:INFO: ** Starting Test 102 start_vote with options **
+[2017-03-02 11:17:20,133]:INFO: ***********************************************
+[2017-03-02 11:17:20,134]:INFO: Asserting start_vote as "start_vote test1, test2, test3" has return expected results
+[2017-03-02 11:17:20,134]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:17:20,134]:INFO: ***********************
+[2017-03-02 11:17:20,134]:INFO: ** Finished Test 102 **
+[2017-03-02 11:17:20,134]:INFO: ***********************
+
+[2017-03-02 11:17:20,135]:INFO: ***************************************************
+[2017-03-02 11:17:20,135]:INFO: ** Starting Test 103 start_vote with one option. **
+[2017-03-02 11:17:20,135]:INFO: ***************************************************
+[2017-03-02 11:17:20,135]:INFO: Asserting start_vote as "start_vote test1" has return expected results
+[2017-03-02 11:17:20,135]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:17:20,135]:INFO: ***********************
+[2017-03-02 11:17:20,135]:INFO: ** Finished Test 103 **
+[2017-03-02 11:17:20,135]:INFO: ***********************
+
+[2017-03-02 11:17:20,136]:INFO: *******************************************************
+[2017-03-02 11:17:20,136]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-02 11:17:20,136]:INFO: *******************************************************
+[2017-03-02 11:17:20,137]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:17:20,137]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:17:20,137]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 11:17:20,137]:INFO: Asserting vote as "vote " has return expected results
+[2017-03-02 11:17:20,137]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:17:20,137]:INFO: ***********************
+[2017-03-02 11:17:20,137]:INFO: ** Finished Test 104 **
+[2017-03-02 11:17:20,137]:INFO: ***********************
+
+[2017-03-02 11:17:20,138]:INFO: *******************************************************
+[2017-03-02 11:17:20,138]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-02 11:17:20,138]:INFO: *******************************************************
+[2017-03-02 11:17:20,138]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:17:20,138]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:17:20,139]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 11:17:20,139]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 11:17:20,139]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:18:00,716]:INFO: ******************************************
+[2017-03-02 11:18:00,716]:INFO: ** Starting Test 100 start_vote command **
+[2017-03-02 11:18:00,716]:INFO: ******************************************
+[2017-03-02 11:18:00,716]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:18:00,717]:INFO: Asserting the json
+[2017-03-02 11:18:00,717]:INFO: ***********************
+[2017-03-02 11:18:00,717]:INFO: ** Finished Test 100 **
+[2017-03-02 11:18:00,717]:INFO: ***********************
+
+[2017-03-02 11:18:00,719]:INFO: ********************************************
+[2017-03-02 11:18:00,719]:INFO: ** Starting Test 101 start_vote camelcase **
+[2017-03-02 11:18:00,719]:INFO: ********************************************
+[2017-03-02 11:18:00,720]:INFO: Asserting start_vote as "sTaRt_vOte" has return expected results
+[2017-03-02 11:18:00,720]:INFO: Asserting the json
+[2017-03-02 11:18:00,720]:INFO: ***********************
+[2017-03-02 11:18:00,720]:INFO: ** Finished Test 101 **
+[2017-03-02 11:18:00,720]:INFO: ***********************
+
+[2017-03-02 11:18:00,721]:INFO: ***********************************************
+[2017-03-02 11:18:00,721]:INFO: ** Starting Test 102 start_vote with options **
+[2017-03-02 11:18:00,721]:INFO: ***********************************************
+[2017-03-02 11:18:00,722]:INFO: Asserting start_vote as "start_vote test1, test2, test3" has return expected results
+[2017-03-02 11:18:00,722]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:18:00,722]:INFO: ***********************
+[2017-03-02 11:18:00,722]:INFO: ** Finished Test 102 **
+[2017-03-02 11:18:00,722]:INFO: ***********************
+
+[2017-03-02 11:18:00,723]:INFO: ***************************************************
+[2017-03-02 11:18:00,723]:INFO: ** Starting Test 103 start_vote with one option. **
+[2017-03-02 11:18:00,723]:INFO: ***************************************************
+[2017-03-02 11:18:00,723]:INFO: Asserting start_vote as "start_vote test1" has return expected results
+[2017-03-02 11:18:00,723]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:18:00,723]:INFO: ***********************
+[2017-03-02 11:18:00,724]:INFO: ** Finished Test 103 **
+[2017-03-02 11:18:00,724]:INFO: ***********************
+
+[2017-03-02 11:18:00,724]:INFO: *******************************************************
+[2017-03-02 11:18:00,724]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-02 11:18:00,724]:INFO: *******************************************************
+[2017-03-02 11:18:00,725]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:18:00,725]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:18:00,726]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 11:18:00,726]:INFO: Asserting vote as "vote " has return expected results
+[2017-03-02 11:18:00,726]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:18:00,726]:INFO: ***********************
+[2017-03-02 11:18:00,726]:INFO: ** Finished Test 104 **
+[2017-03-02 11:18:00,726]:INFO: ***********************
+
+[2017-03-02 11:18:00,726]:INFO: *******************************************************
+[2017-03-02 11:18:00,726]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-02 11:18:00,726]:INFO: *******************************************************
+[2017-03-02 11:18:00,727]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 11:18:00,727]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:18:00,727]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 11:18:00,728]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 11:18:00,728]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 11:18:00,728]:INFO: ***********************
+[2017-03-02 11:18:00,728]:INFO: ** Finished Test 105 **
+[2017-03-02 11:18:00,728]:INFO: ***********************
+
+[2017-03-02 16:01:29,261]:INFO: ******************************************
+[2017-03-02 16:01:29,261]:INFO: ** Starting Test 100 start_vote command **
+[2017-03-02 16:01:29,262]:INFO: ******************************************
+[2017-03-02 16:01:29,262]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 16:01:29,262]:INFO: Asserting the json
+[2017-03-02 16:01:29,262]:INFO: ***********************
+[2017-03-02 16:01:29,262]:INFO: ** Finished Test 100 **
+[2017-03-02 16:01:29,262]:INFO: ***********************
+
+[2017-03-02 16:01:29,263]:INFO: ********************************************
+[2017-03-02 16:01:29,263]:INFO: ** Starting Test 101 start_vote camelcase **
+[2017-03-02 16:01:29,263]:INFO: ********************************************
+[2017-03-02 16:01:29,264]:INFO: Asserting start_vote as "sTaRt_vOte" has return expected results
+[2017-03-02 16:01:29,264]:INFO: Asserting the json
+[2017-03-02 16:01:29,264]:INFO: ***********************
+[2017-03-02 16:01:29,264]:INFO: ** Finished Test 101 **
+[2017-03-02 16:01:29,264]:INFO: ***********************
+
+[2017-03-02 16:01:29,265]:INFO: ***********************************************
+[2017-03-02 16:01:29,265]:INFO: ** Starting Test 102 start_vote with options **
+[2017-03-02 16:01:29,265]:INFO: ***********************************************
+[2017-03-02 16:01:29,265]:INFO: Asserting start_vote as "start_vote test1, test2, test3" has return expected results
+[2017-03-02 16:01:29,265]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:01:29,265]:INFO: ***********************
+[2017-03-02 16:01:29,266]:INFO: ** Finished Test 102 **
+[2017-03-02 16:01:29,266]:INFO: ***********************
+
+[2017-03-02 16:01:29,266]:INFO: ***************************************************
+[2017-03-02 16:01:29,266]:INFO: ** Starting Test 103 start_vote with one option. **
+[2017-03-02 16:01:29,266]:INFO: ***************************************************
+[2017-03-02 16:01:29,266]:INFO: Asserting start_vote as "start_vote test1" has return expected results
+[2017-03-02 16:01:29,266]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:01:29,266]:INFO: ***********************
+[2017-03-02 16:01:29,267]:INFO: ** Finished Test 103 **
+[2017-03-02 16:01:29,267]:INFO: ***********************
+
+[2017-03-02 16:01:29,267]:INFO: *******************************************************
+[2017-03-02 16:01:29,267]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-02 16:01:29,267]:INFO: *******************************************************
+[2017-03-02 16:01:29,268]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 16:01:29,268]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:01:29,268]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 16:01:29,268]:INFO: Asserting vote as "vote " has return expected results
+[2017-03-02 16:01:29,269]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:01:29,269]:INFO: ***********************
+[2017-03-02 16:01:29,269]:INFO: ** Finished Test 104 **
+[2017-03-02 16:01:29,269]:INFO: ***********************
+
+[2017-03-02 16:01:29,269]:INFO: ******************************************************
+[2017-03-02 16:01:29,269]:INFO: ** Starting Test 105 vote command with a vote cast. **
+[2017-03-02 16:01:29,269]:INFO: ******************************************************
+[2017-03-02 16:01:29,270]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 16:01:29,270]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:01:29,270]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 16:01:29,271]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 16:01:29,271]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:01:29,271]:INFO: ***********************
+[2017-03-02 16:01:29,271]:INFO: ** Finished Test 105 **
+[2017-03-02 16:01:29,271]:INFO: ***********************
+
+[2017-03-02 16:01:29,272]:INFO: ******************************************************
+[2017-03-02 16:01:29,272]:INFO: ** Starting Test 106 vote command with a vote cast. **
+[2017-03-02 16:01:29,272]:INFO: ******************************************************
+[2017-03-02 16:01:29,273]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 16:01:29,273]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:01:29,273]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 16:01:29,273]:INFO: Asserting vote as "vote wrong" has return expected results
+[2017-03-02 16:01:29,273]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:01:29,273]:INFO: ***********************
+[2017-03-02 16:01:29,273]:INFO: ** Finished Test 106 **
+[2017-03-02 16:01:29,273]:INFO: ***********************
+
+[2017-03-02 16:08:47,587]:INFO: ******************************************
+[2017-03-02 16:08:47,587]:INFO: ** Starting Test 100 start_vote command **
+[2017-03-02 16:08:47,587]:INFO: ******************************************
+[2017-03-02 16:08:47,588]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 16:08:47,588]:INFO: Asserting the json
+[2017-03-02 16:08:47,588]:INFO: ***********************
+[2017-03-02 16:08:47,588]:INFO: ** Finished Test 100 **
+[2017-03-02 16:08:47,588]:INFO: ***********************
+
+[2017-03-02 16:08:47,589]:INFO: ********************************************
+[2017-03-02 16:08:47,589]:INFO: ** Starting Test 101 start_vote camelcase **
+[2017-03-02 16:08:47,589]:INFO: ********************************************
+[2017-03-02 16:08:47,590]:INFO: Asserting start_vote as "sTaRt_vOte" has return expected results
+[2017-03-02 16:08:47,590]:INFO: Asserting the json
+[2017-03-02 16:08:47,590]:INFO: ***********************
+[2017-03-02 16:08:47,590]:INFO: ** Finished Test 101 **
+[2017-03-02 16:08:47,590]:INFO: ***********************
+
+[2017-03-02 16:08:47,591]:INFO: ***********************************************
+[2017-03-02 16:08:47,591]:INFO: ** Starting Test 102 start_vote with options **
+[2017-03-02 16:08:47,591]:INFO: ***********************************************
+[2017-03-02 16:08:47,592]:INFO: Asserting start_vote as "start_vote test1, test2, test3" has return expected results
+[2017-03-02 16:08:47,592]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:08:47,592]:INFO: ***********************
+[2017-03-02 16:08:47,592]:INFO: ** Finished Test 102 **
+[2017-03-02 16:08:47,592]:INFO: ***********************
+
+[2017-03-02 16:08:47,593]:INFO: ***************************************************
+[2017-03-02 16:08:47,593]:INFO: ** Starting Test 103 start_vote with one option. **
+[2017-03-02 16:08:47,593]:INFO: ***************************************************
+[2017-03-02 16:08:47,593]:INFO: Asserting start_vote as "start_vote test1" has return expected results
+[2017-03-02 16:08:47,593]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:08:47,593]:INFO: ***********************
+[2017-03-02 16:08:47,593]:INFO: ** Finished Test 103 **
+[2017-03-02 16:08:47,593]:INFO: ***********************
+
+[2017-03-02 16:08:47,594]:INFO: *******************************************************
+[2017-03-02 16:08:47,594]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-02 16:08:47,594]:INFO: *******************************************************
+[2017-03-02 16:08:47,594]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 16:08:47,594]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:08:47,595]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 16:08:47,595]:INFO: Asserting vote as "vote " has return expected results
+[2017-03-02 16:08:47,595]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:08:47,595]:INFO: ***********************
+[2017-03-02 16:08:47,595]:INFO: ** Finished Test 104 **
+[2017-03-02 16:08:47,595]:INFO: ***********************
+
+[2017-03-02 16:08:47,596]:INFO: ******************************************************
+[2017-03-02 16:08:47,596]:INFO: ** Starting Test 105 vote command with a vote cast. **
+[2017-03-02 16:08:47,596]:INFO: ******************************************************
+[2017-03-02 16:08:47,596]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 16:08:47,596]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:08:47,597]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 16:08:47,597]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 16:08:47,597]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:08:47,597]:INFO: ***********************
+[2017-03-02 16:08:47,597]:INFO: ** Finished Test 105 **
+[2017-03-02 16:08:47,598]:INFO: ***********************
+
+[2017-03-02 16:08:47,598]:INFO: ******************************************************
+[2017-03-02 16:08:47,598]:INFO: ** Starting Test 106 vote command with a vote cast. **
+[2017-03-02 16:08:47,598]:INFO: ******************************************************
+[2017-03-02 16:08:47,599]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 16:08:47,599]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:08:47,599]:INFO: Cast a vote with correct option present. Asserting the vote.
+[2017-03-02 16:08:47,599]:INFO: Asserting vote as "vote wrong" has return expected results
+[2017-03-02 16:08:47,599]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:08:47,599]:INFO: ***********************
+[2017-03-02 16:08:47,599]:INFO: ** Finished Test 106 **
+[2017-03-02 16:08:47,599]:INFO: ***********************
+
+[2017-03-02 16:08:47,600]:INFO: ******************************************************
+[2017-03-02 16:08:47,600]:INFO: ** Starting Test 107 vote command with a vote cast. **
+[2017-03-02 16:08:47,600]:INFO: ******************************************************
+[2017-03-02 16:08:47,600]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 16:08:47,600]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:08:47,600]:INFO: Cast a vote with correct option present. Asserting the vote.
+[2017-03-02 16:08:47,601]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 16:08:47,601]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:08:47,601]:INFO: Cast a vote from the same user. Asserting the vote is not logged.
+[2017-03-02 16:08:47,601]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 16:08:47,602]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:08:47,602]:INFO: ***********************
+[2017-03-02 16:08:47,602]:INFO: ** Finished Test 107 **
+[2017-03-02 16:08:47,602]:INFO: ***********************
+
+[2017-03-02 16:17:08,195]:INFO: ******************************************
+[2017-03-02 16:17:08,195]:INFO: ** Starting Test 100 start_vote command **
+[2017-03-02 16:17:08,195]:INFO: ******************************************
+[2017-03-02 16:17:08,195]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 16:17:08,195]:INFO: Asserting the json
+[2017-03-02 16:17:08,195]:INFO: ***********************
+[2017-03-02 16:17:08,195]:INFO: ** Finished Test 100 **
+[2017-03-02 16:17:08,196]:INFO: ***********************
+
+[2017-03-02 16:17:08,196]:INFO: ********************************************
+[2017-03-02 16:17:08,196]:INFO: ** Starting Test 101 start_vote camelcase **
+[2017-03-02 16:17:08,196]:INFO: ********************************************
+[2017-03-02 16:17:08,197]:INFO: Asserting start_vote as "sTaRt_vOte" has return expected results
+[2017-03-02 16:17:08,197]:INFO: Asserting the json
+[2017-03-02 16:17:08,197]:INFO: ***********************
+[2017-03-02 16:17:08,197]:INFO: ** Finished Test 101 **
+[2017-03-02 16:17:08,197]:INFO: ***********************
+
+[2017-03-02 16:17:08,198]:INFO: ***********************************************
+[2017-03-02 16:17:08,198]:INFO: ** Starting Test 102 start_vote with options **
+[2017-03-02 16:17:08,198]:INFO: ***********************************************
+[2017-03-02 16:17:08,199]:INFO: Asserting start_vote as "start_vote test1, test2, test3" has return expected results
+[2017-03-02 16:17:08,199]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:17:08,199]:INFO: ***********************
+[2017-03-02 16:17:08,199]:INFO: ** Finished Test 102 **
+[2017-03-02 16:17:08,199]:INFO: ***********************
+
+[2017-03-02 16:17:08,200]:INFO: ***************************************************
+[2017-03-02 16:17:08,200]:INFO: ** Starting Test 103 start_vote with one option. **
+[2017-03-02 16:17:08,200]:INFO: ***************************************************
+[2017-03-02 16:17:08,200]:INFO: Asserting start_vote as "start_vote test1" has return expected results
+[2017-03-02 16:17:08,200]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:17:08,200]:INFO: ***********************
+[2017-03-02 16:17:08,200]:INFO: ** Finished Test 103 **
+[2017-03-02 16:17:08,200]:INFO: ***********************
+
+[2017-03-02 16:17:08,201]:INFO: *******************************************************
+[2017-03-02 16:17:08,201]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-02 16:17:08,201]:INFO: *******************************************************
+[2017-03-02 16:17:08,202]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 16:17:08,202]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:17:08,202]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 16:17:08,202]:INFO: Asserting vote as "vote " has return expected results
+[2017-03-02 16:17:08,202]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:17:08,202]:INFO: ***********************
+[2017-03-02 16:17:08,203]:INFO: ** Finished Test 104 **
+[2017-03-02 16:17:08,203]:INFO: ***********************
+
+[2017-03-02 16:17:08,203]:INFO: ******************************************************
+[2017-03-02 16:17:08,203]:INFO: ** Starting Test 105 vote command with a vote cast. **
+[2017-03-02 16:17:08,203]:INFO: ******************************************************
+[2017-03-02 16:17:08,204]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 16:17:08,204]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:17:08,204]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 16:17:08,205]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 16:17:08,205]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:17:08,205]:INFO: ***********************
+[2017-03-02 16:17:08,205]:INFO: ** Finished Test 105 **
+[2017-03-02 16:17:08,205]:INFO: ***********************
+
+[2017-03-02 16:17:08,206]:INFO: ******************************************************
+[2017-03-02 16:17:08,206]:INFO: ** Starting Test 106 vote command with a vote cast. **
+[2017-03-02 16:17:08,206]:INFO: ******************************************************
+[2017-03-02 16:17:08,207]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 16:17:08,207]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:17:08,207]:INFO: Cast a vote with correct option present. Asserting the vote.
+[2017-03-02 16:17:08,207]:INFO: Asserting vote as "vote wrong" has return expected results
+[2017-03-02 16:17:08,207]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:17:08,208]:INFO: ***********************
+[2017-03-02 16:17:08,208]:INFO: ** Finished Test 106 **
+[2017-03-02 16:17:08,208]:INFO: ***********************
+
+[2017-03-02 16:17:08,208]:INFO: ******************************************************
+[2017-03-02 16:17:08,208]:INFO: ** Starting Test 107 vote command with a vote cast. **
+[2017-03-02 16:17:08,208]:INFO: ******************************************************
+[2017-03-02 16:17:08,209]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 16:17:08,209]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:17:08,209]:INFO: Cast a vote with correct option present. Asserting the vote.
+[2017-03-02 16:17:08,210]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 16:17:08,210]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:17:08,210]:INFO: Cast a vote from the same user. Asserting the vote is not logged.
+[2017-03-02 16:17:08,210]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 16:17:08,210]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:17:08,210]:INFO: ***********************
+[2017-03-02 16:17:08,210]:INFO: ** Finished Test 107 **
+[2017-03-02 16:17:08,210]:INFO: ***********************
+
+[2017-03-02 16:17:08,211]:INFO: ******************************************************
+[2017-03-02 16:17:08,211]:INFO: ** Starting Test 108 vote command with a vote cast. **
+[2017-03-02 16:17:08,211]:INFO: ******************************************************
+[2017-03-02 16:17:08,211]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 16:17:08,212]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:17:08,212]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 16:17:08,213]:INFO: Asserting vote as "vOtE yEs" has return expected results
+[2017-03-02 16:17:08,213]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:17:08,213]:INFO: ***********************
+[2017-03-02 16:17:08,213]:INFO: ** Finished Test 108 **
+[2017-03-02 16:17:08,213]:INFO: ***********************
+
+[2017-03-02 16:52:04,986]:INFO: ******************************************
+[2017-03-02 16:52:04,987]:INFO: ** Starting Test 100 start_vote command **
+[2017-03-02 16:52:04,987]:INFO: ******************************************
+[2017-03-02 16:52:04,987]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 16:52:04,987]:INFO: Asserting the json
+[2017-03-02 16:52:04,987]:INFO: ***********************
+[2017-03-02 16:52:04,987]:INFO: ** Finished Test 100 **
+[2017-03-02 16:52:04,987]:INFO: ***********************
+
+[2017-03-02 16:52:04,988]:INFO: ********************************************
+[2017-03-02 16:52:04,988]:INFO: ** Starting Test 101 start_vote camelcase **
+[2017-03-02 16:52:04,988]:INFO: ********************************************
+[2017-03-02 16:52:04,989]:INFO: Asserting start_vote as "sTaRt_vOte" has return expected results
+[2017-03-02 16:52:04,989]:INFO: Asserting the json
+[2017-03-02 16:52:04,989]:INFO: ***********************
+[2017-03-02 16:52:04,989]:INFO: ** Finished Test 101 **
+[2017-03-02 16:52:04,989]:INFO: ***********************
+
+[2017-03-02 16:52:04,990]:INFO: ***********************************************
+[2017-03-02 16:52:04,990]:INFO: ** Starting Test 102 start_vote with options **
+[2017-03-02 16:52:04,990]:INFO: ***********************************************
+[2017-03-02 16:52:04,991]:INFO: Asserting start_vote as "start_vote test1, test2, test3" has return expected results
+[2017-03-02 16:52:04,991]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:52:04,991]:INFO: ***********************
+[2017-03-02 16:52:04,991]:INFO: ** Finished Test 102 **
+[2017-03-02 16:52:04,991]:INFO: ***********************
+
+[2017-03-02 16:52:04,992]:INFO: ***************************************************
+[2017-03-02 16:52:04,992]:INFO: ** Starting Test 103 start_vote with one option. **
+[2017-03-02 16:52:04,992]:INFO: ***************************************************
+[2017-03-02 16:52:04,992]:INFO: Asserting start_vote as "start_vote test1" has return expected results
+[2017-03-02 16:52:04,992]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:52:04,992]:INFO: ***********************
+[2017-03-02 16:52:04,992]:INFO: ** Finished Test 103 **
+[2017-03-02 16:52:04,993]:INFO: ***********************
+
+[2017-03-02 16:52:04,993]:INFO: *******************************************************
+[2017-03-02 16:52:04,993]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-02 16:52:04,993]:INFO: *******************************************************
+[2017-03-02 16:52:04,994]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 16:52:04,994]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:52:04,994]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 16:52:04,994]:INFO: Asserting vote as "vote " has return expected results
+[2017-03-02 16:52:04,994]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:52:04,994]:INFO: ***********************
+[2017-03-02 16:52:04,994]:INFO: ** Finished Test 104 **
+[2017-03-02 16:52:04,994]:INFO: ***********************
+
+[2017-03-02 16:52:04,995]:INFO: ******************************************************
+[2017-03-02 16:52:04,995]:INFO: ** Starting Test 105 vote command with a vote cast. **
+[2017-03-02 16:52:04,995]:INFO: ******************************************************
+[2017-03-02 16:52:04,996]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 16:52:04,996]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:52:04,996]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 16:52:04,997]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 16:52:04,997]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:52:04,997]:INFO: ***********************
+[2017-03-02 16:52:04,997]:INFO: ** Finished Test 105 **
+[2017-03-02 16:52:04,997]:INFO: ***********************
+
+[2017-03-02 16:52:04,998]:INFO: ******************************************************
+[2017-03-02 16:52:04,998]:INFO: ** Starting Test 106 vote command with a vote cast. **
+[2017-03-02 16:52:04,998]:INFO: ******************************************************
+[2017-03-02 16:52:04,999]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 16:52:04,999]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:52:04,999]:INFO: Cast a vote with correct option present. Asserting the vote.
+[2017-03-02 16:52:04,999]:INFO: Asserting vote as "vote wrong" has return expected results
+[2017-03-02 16:52:04,999]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:52:05,000]:INFO: ***********************
+[2017-03-02 16:52:05,000]:INFO: ** Finished Test 106 **
+[2017-03-02 16:52:05,000]:INFO: ***********************
+
+[2017-03-02 16:52:05,001]:INFO: ******************************************************
+[2017-03-02 16:52:05,001]:INFO: ** Starting Test 107 vote command with a vote cast. **
+[2017-03-02 16:52:05,001]:INFO: ******************************************************
+[2017-03-02 16:52:05,001]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 16:52:05,001]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:52:05,002]:INFO: Cast a vote with correct option present. Asserting the vote.
+[2017-03-02 16:52:05,002]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 16:52:05,002]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:52:05,003]:INFO: Cast a vote from the same user. Asserting the vote is not logged.
+[2017-03-02 16:52:05,003]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 16:52:05,003]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:52:05,003]:INFO: ***********************
+[2017-03-02 16:52:05,003]:INFO: ** Finished Test 107 **
+[2017-03-02 16:52:05,004]:INFO: ***********************
+
+[2017-03-02 16:52:05,004]:INFO: ******************************************************
+[2017-03-02 16:52:05,004]:INFO: ** Starting Test 108 vote command with a vote cast. **
+[2017-03-02 16:52:05,004]:INFO: ******************************************************
+[2017-03-02 16:52:05,005]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 16:52:05,005]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:52:05,005]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 16:52:05,006]:INFO: Asserting vote as "vOtE yEs" has return expected results
+[2017-03-02 16:52:05,006]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:52:05,006]:INFO: ***********************
+[2017-03-02 16:52:05,006]:INFO: ** Finished Test 108 **
+[2017-03-02 16:52:05,006]:INFO: ***********************
+
+[2017-03-02 16:52:05,006]:INFO: ******************************************************
+[2017-03-02 16:52:05,007]:INFO: ** Starting Test 109 vote command with a vote cast. **
+[2017-03-02 16:52:05,007]:INFO: ******************************************************
+[2017-03-02 16:52:05,007]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 16:52:05,007]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:52:05,007]:INFO: Cast a vote with user1's option. Asserting the vote logged.
+[2017-03-02 16:52:05,008]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 16:52:05,009]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:52:05,009]:INFO: Cast a vote with user2's option. Asserting the vote logged.
+[2017-03-02 16:52:05,009]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 16:52:05,009]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 16:52:05,009]:INFO: ***********************
+[2017-03-02 16:52:05,009]:INFO: ** Finished Test 109 **
+[2017-03-02 16:52:05,010]:INFO: ***********************
+
+[2017-03-02 17:02:09,679]:INFO: ******************************************
+[2017-03-02 17:02:09,679]:INFO: ** Starting Test 100 start_vote command **
+[2017-03-02 17:02:09,679]:INFO: ******************************************
+[2017-03-02 17:02:09,679]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:02:09,679]:INFO: Asserting the json
+[2017-03-02 17:02:09,680]:INFO: ***********************
+[2017-03-02 17:02:09,680]:INFO: ** Finished Test 100 **
+[2017-03-02 17:02:09,680]:INFO: ***********************
+
+[2017-03-02 17:02:09,690]:INFO: ********************************************
+[2017-03-02 17:02:09,690]:INFO: ** Starting Test 101 start_vote camelcase **
+[2017-03-02 17:02:09,690]:INFO: ********************************************
+[2017-03-02 17:02:09,692]:INFO: Asserting start_vote as "sTaRt_vOte" has return expected results
+[2017-03-02 17:02:09,692]:INFO: Asserting the json
+[2017-03-02 17:02:09,693]:INFO: ***********************
+[2017-03-02 17:02:09,693]:INFO: ** Finished Test 101 **
+[2017-03-02 17:02:09,693]:INFO: ***********************
+
+[2017-03-02 17:02:09,693]:INFO: ***********************************************
+[2017-03-02 17:02:09,693]:INFO: ** Starting Test 102 start_vote with options **
+[2017-03-02 17:02:09,693]:INFO: ***********************************************
+[2017-03-02 17:02:09,694]:INFO: Asserting start_vote as "start_vote test1, test2, test3" has return expected results
+[2017-03-02 17:02:09,694]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:02:09,694]:INFO: ***********************
+[2017-03-02 17:02:09,694]:INFO: ** Finished Test 102 **
+[2017-03-02 17:02:09,694]:INFO: ***********************
+
+[2017-03-02 17:02:09,695]:INFO: ***************************************************
+[2017-03-02 17:02:09,695]:INFO: ** Starting Test 103 start_vote with one option. **
+[2017-03-02 17:02:09,696]:INFO: ***************************************************
+[2017-03-02 17:02:09,696]:INFO: Asserting start_vote as "start_vote test1" has return expected results
+[2017-03-02 17:02:09,696]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:02:09,696]:INFO: ***********************
+[2017-03-02 17:02:09,696]:INFO: ** Finished Test 103 **
+[2017-03-02 17:02:09,696]:INFO: ***********************
+
+[2017-03-02 17:02:09,696]:INFO: *******************************************************
+[2017-03-02 17:02:09,697]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-02 17:02:09,697]:INFO: *******************************************************
+[2017-03-02 17:02:09,699]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:02:09,700]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:02:09,700]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 17:02:09,700]:INFO: Asserting vote as "vote " has return expected results
+[2017-03-02 17:02:09,700]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:02:09,700]:INFO: ***********************
+[2017-03-02 17:02:09,700]:INFO: ** Finished Test 104 **
+[2017-03-02 17:02:09,700]:INFO: ***********************
+
+[2017-03-02 17:02:09,701]:INFO: ******************************************************
+[2017-03-02 17:02:09,701]:INFO: ** Starting Test 105 vote command with a vote cast. **
+[2017-03-02 17:02:09,701]:INFO: ******************************************************
+[2017-03-02 17:02:09,703]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:02:09,703]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:02:09,703]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 17:02:09,704]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 17:02:09,704]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:02:09,704]:INFO: ***********************
+[2017-03-02 17:02:09,704]:INFO: ** Finished Test 105 **
+[2017-03-02 17:02:09,704]:INFO: ***********************
+
+[2017-03-02 17:02:09,705]:INFO: ******************************************************
+[2017-03-02 17:02:09,705]:INFO: ** Starting Test 106 vote command with a vote cast. **
+[2017-03-02 17:02:09,705]:INFO: ******************************************************
+[2017-03-02 17:02:09,705]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:02:09,706]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:02:09,706]:INFO: Cast a vote with correct option present. Asserting the vote.
+[2017-03-02 17:02:09,706]:INFO: Asserting vote as "vote wrong" has return expected results
+[2017-03-02 17:02:09,706]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:02:09,706]:INFO: ***********************
+[2017-03-02 17:02:09,706]:INFO: ** Finished Test 106 **
+[2017-03-02 17:02:09,706]:INFO: ***********************
+
+[2017-03-02 17:02:09,706]:INFO: ******************************************************
+[2017-03-02 17:02:09,707]:INFO: ** Starting Test 107 vote command with a vote cast. **
+[2017-03-02 17:02:09,707]:INFO: ******************************************************
+[2017-03-02 17:02:09,707]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:02:09,708]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:02:09,708]:INFO: Cast a vote with correct option present. Asserting the vote.
+[2017-03-02 17:02:09,711]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 17:02:09,711]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:02:09,711]:INFO: Cast a vote from the same user. Asserting the vote is not logged.
+[2017-03-02 17:02:09,711]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 17:02:09,711]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:02:09,711]:INFO: ***********************
+[2017-03-02 17:02:09,711]:INFO: ** Finished Test 107 **
+[2017-03-02 17:02:09,711]:INFO: ***********************
+
+[2017-03-02 17:02:09,712]:INFO: ******************************************************
+[2017-03-02 17:02:09,712]:INFO: ** Starting Test 108 vote command with a vote cast. **
+[2017-03-02 17:02:09,712]:INFO: ******************************************************
+[2017-03-02 17:02:09,713]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:02:09,713]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:02:09,713]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 17:02:09,713]:INFO: Asserting vote as "vOtE yEs" has return expected results
+[2017-03-02 17:02:09,713]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:02:09,714]:INFO: ***********************
+[2017-03-02 17:02:09,714]:INFO: ** Finished Test 108 **
+[2017-03-02 17:02:09,714]:INFO: ***********************
+
+[2017-03-02 17:02:09,714]:INFO: ******************************************************
+[2017-03-02 17:02:09,715]:INFO: ** Starting Test 109 vote command with a vote cast. **
+[2017-03-02 17:02:09,715]:INFO: ******************************************************
+[2017-03-02 17:02:09,715]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:02:09,716]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:02:09,716]:INFO: Cast a vote with user0's option. Asserting the vote logged.
+[2017-03-02 17:02:09,716]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 17:02:09,716]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:02:09,716]:INFO: Cast a vote with user1's option. Asserting the vote logged.
+[2017-03-02 17:02:09,717]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 17:02:09,717]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:02:09,717]:INFO: ***********************
+[2017-03-02 17:02:09,717]:INFO: ** Finished Test 109 **
+[2017-03-02 17:02:09,717]:INFO: ***********************
+
+[2017-03-02 17:03:14,632]:INFO: ******************************************
+[2017-03-02 17:03:14,633]:INFO: ** Starting Test 100 start_vote command **
+[2017-03-02 17:03:14,633]:INFO: ******************************************
+[2017-03-02 17:03:14,633]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:03:14,633]:INFO: Asserting the json
+[2017-03-02 17:03:14,633]:INFO: ***********************
+[2017-03-02 17:03:14,633]:INFO: ** Finished Test 100 **
+[2017-03-02 17:03:14,633]:INFO: ***********************
+
+[2017-03-02 17:03:14,634]:INFO: ********************************************
+[2017-03-02 17:03:14,634]:INFO: ** Starting Test 101 start_vote camelcase **
+[2017-03-02 17:03:14,634]:INFO: ********************************************
+[2017-03-02 17:03:14,635]:INFO: Asserting start_vote as "sTaRt_vOte" has return expected results
+[2017-03-02 17:03:14,635]:INFO: Asserting the json
+[2017-03-02 17:03:14,635]:INFO: ***********************
+[2017-03-02 17:03:14,635]:INFO: ** Finished Test 101 **
+[2017-03-02 17:03:14,635]:INFO: ***********************
+
+[2017-03-02 17:03:14,636]:INFO: ***********************************************
+[2017-03-02 17:03:14,636]:INFO: ** Starting Test 102 start_vote with options **
+[2017-03-02 17:03:14,636]:INFO: ***********************************************
+[2017-03-02 17:03:14,637]:INFO: Asserting start_vote as "start_vote test1, test2, test3" has return expected results
+[2017-03-02 17:03:14,637]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:14,638]:INFO: ***********************
+[2017-03-02 17:03:14,638]:INFO: ** Finished Test 102 **
+[2017-03-02 17:03:14,638]:INFO: ***********************
+
+[2017-03-02 17:03:14,638]:INFO: ***************************************************
+[2017-03-02 17:03:14,638]:INFO: ** Starting Test 103 start_vote with one option. **
+[2017-03-02 17:03:14,638]:INFO: ***************************************************
+[2017-03-02 17:03:14,639]:INFO: Asserting start_vote as "start_vote test1" has return expected results
+[2017-03-02 17:03:14,639]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:14,639]:INFO: ***********************
+[2017-03-02 17:03:14,639]:INFO: ** Finished Test 103 **
+[2017-03-02 17:03:14,639]:INFO: ***********************
+
+[2017-03-02 17:03:14,639]:INFO: *******************************************************
+[2017-03-02 17:03:14,639]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-02 17:03:14,639]:INFO: *******************************************************
+[2017-03-02 17:03:14,640]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:03:14,640]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:14,640]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 17:03:14,640]:INFO: Asserting vote as "vote " has return expected results
+[2017-03-02 17:03:14,640]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:14,640]:INFO: ***********************
+[2017-03-02 17:03:14,641]:INFO: ** Finished Test 104 **
+[2017-03-02 17:03:14,641]:INFO: ***********************
+
+[2017-03-02 17:03:14,641]:INFO: ******************************************************
+[2017-03-02 17:03:14,641]:INFO: ** Starting Test 105 vote command with a vote cast. **
+[2017-03-02 17:03:14,641]:INFO: ******************************************************
+[2017-03-02 17:03:14,642]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:03:14,642]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:14,642]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 17:03:14,643]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 17:03:14,643]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:14,643]:INFO: ***********************
+[2017-03-02 17:03:14,644]:INFO: ** Finished Test 105 **
+[2017-03-02 17:03:14,644]:INFO: ***********************
+
+[2017-03-02 17:03:14,644]:INFO: ******************************************************
+[2017-03-02 17:03:14,645]:INFO: ** Starting Test 106 vote command with a vote cast. **
+[2017-03-02 17:03:14,645]:INFO: ******************************************************
+[2017-03-02 17:03:14,645]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:03:14,645]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:14,645]:INFO: Cast a vote with correct option present. Asserting the vote.
+[2017-03-02 17:03:14,646]:INFO: Asserting vote as "vote wrong" has return expected results
+[2017-03-02 17:03:14,646]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:14,646]:INFO: ***********************
+[2017-03-02 17:03:14,646]:INFO: ** Finished Test 106 **
+[2017-03-02 17:03:14,646]:INFO: ***********************
+
+[2017-03-02 17:03:14,646]:INFO: ******************************************************
+[2017-03-02 17:03:14,646]:INFO: ** Starting Test 107 vote command with a vote cast. **
+[2017-03-02 17:03:14,646]:INFO: ******************************************************
+[2017-03-02 17:03:14,647]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:03:14,647]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:14,647]:INFO: Cast a vote with correct option present. Asserting the vote.
+[2017-03-02 17:03:14,648]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 17:03:14,648]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:14,648]:INFO: Cast a vote from the same user. Asserting the vote is not logged.
+[2017-03-02 17:03:14,648]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 17:03:14,648]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:14,648]:INFO: ***********************
+[2017-03-02 17:03:14,648]:INFO: ** Finished Test 107 **
+[2017-03-02 17:03:14,648]:INFO: ***********************
+
+[2017-03-02 17:03:14,649]:INFO: ******************************************************
+[2017-03-02 17:03:14,649]:INFO: ** Starting Test 108 vote command with a vote cast. **
+[2017-03-02 17:03:14,649]:INFO: ******************************************************
+[2017-03-02 17:03:14,649]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:03:14,649]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:14,650]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 17:03:14,650]:INFO: Asserting vote as "vOtE yEs" has return expected results
+[2017-03-02 17:03:14,650]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:14,651]:INFO: ***********************
+[2017-03-02 17:03:14,651]:INFO: ** Finished Test 108 **
+[2017-03-02 17:03:14,651]:INFO: ***********************
+
+[2017-03-02 17:03:14,651]:INFO: ******************************************************
+[2017-03-02 17:03:14,651]:INFO: ** Starting Test 109 vote command with a vote cast. **
+[2017-03-02 17:03:14,651]:INFO: ******************************************************
+[2017-03-02 17:03:14,652]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:03:14,652]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:14,652]:INFO: Cast a vote with user0's option. Asserting the vote logged.
+[2017-03-02 17:03:14,653]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 17:03:14,653]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:14,653]:INFO: Cast a vote with user1's option. Asserting the vote logged.
+[2017-03-02 17:03:14,653]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 17:03:14,654]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:14,654]:INFO: ***********************
+[2017-03-02 17:03:14,654]:INFO: ** Finished Test 109 **
+[2017-03-02 17:03:14,654]:INFO: ***********************
+
+[2017-03-02 17:03:14,654]:INFO: ******************************************************
+[2017-03-02 17:03:14,654]:INFO: ** Starting Test 110 vote command with a vote cast. **
+[2017-03-02 17:03:14,655]:INFO: ******************************************************
+[2017-03-02 17:03:14,655]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:03:14,655]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:14,655]:INFO: Cast a vote with user0's option. Asserting the vote logged.
+[2017-03-02 17:03:14,656]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 17:03:14,656]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:14,656]:INFO: Cast a vote with user1's option. Asserting the vote logged.
+[2017-03-02 17:03:14,656]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 17:03:14,656]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:14,657]:INFO: ***********************
+[2017-03-02 17:03:14,657]:INFO: ** Finished Test 110 **
+[2017-03-02 17:03:14,657]:INFO: ***********************
+
+[2017-03-02 17:03:32,986]:INFO: ******************************************
+[2017-03-02 17:03:32,986]:INFO: ** Starting Test 100 start_vote command **
+[2017-03-02 17:03:32,987]:INFO: ******************************************
+[2017-03-02 17:03:32,987]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:03:32,987]:INFO: Asserting the json
+[2017-03-02 17:03:32,987]:INFO: ***********************
+[2017-03-02 17:03:32,987]:INFO: ** Finished Test 100 **
+[2017-03-02 17:03:32,987]:INFO: ***********************
+
+[2017-03-02 17:03:32,990]:INFO: ********************************************
+[2017-03-02 17:03:32,990]:INFO: ** Starting Test 101 start_vote camelcase **
+[2017-03-02 17:03:32,990]:INFO: ********************************************
+[2017-03-02 17:03:32,990]:INFO: Asserting start_vote as "sTaRt_vOte" has return expected results
+[2017-03-02 17:03:32,991]:INFO: Asserting the json
+[2017-03-02 17:03:32,991]:INFO: ***********************
+[2017-03-02 17:03:32,991]:INFO: ** Finished Test 101 **
+[2017-03-02 17:03:32,991]:INFO: ***********************
+
+[2017-03-02 17:03:32,992]:INFO: ***********************************************
+[2017-03-02 17:03:32,992]:INFO: ** Starting Test 102 start_vote with options **
+[2017-03-02 17:03:32,992]:INFO: ***********************************************
+[2017-03-02 17:03:32,994]:INFO: Asserting start_vote as "start_vote test1, test2, test3" has return expected results
+[2017-03-02 17:03:32,994]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:32,994]:INFO: ***********************
+[2017-03-02 17:03:32,994]:INFO: ** Finished Test 102 **
+[2017-03-02 17:03:32,994]:INFO: ***********************
+
+[2017-03-02 17:03:32,998]:INFO: ***************************************************
+[2017-03-02 17:03:32,998]:INFO: ** Starting Test 103 start_vote with one option. **
+[2017-03-02 17:03:32,998]:INFO: ***************************************************
+[2017-03-02 17:03:32,998]:INFO: Asserting start_vote as "start_vote test1" has return expected results
+[2017-03-02 17:03:32,998]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:32,998]:INFO: ***********************
+[2017-03-02 17:03:32,999]:INFO: ** Finished Test 103 **
+[2017-03-02 17:03:32,999]:INFO: ***********************
+
+[2017-03-02 17:03:32,999]:INFO: *******************************************************
+[2017-03-02 17:03:32,999]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-02 17:03:32,999]:INFO: *******************************************************
+[2017-03-02 17:03:33,000]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:03:33,001]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:33,001]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 17:03:33,001]:INFO: Asserting vote as "vote " has return expected results
+[2017-03-02 17:03:33,001]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:33,001]:INFO: ***********************
+[2017-03-02 17:03:33,001]:INFO: ** Finished Test 104 **
+[2017-03-02 17:03:33,001]:INFO: ***********************
+
+[2017-03-02 17:03:33,002]:INFO: ******************************************************
+[2017-03-02 17:03:33,002]:INFO: ** Starting Test 105 vote command with a vote cast. **
+[2017-03-02 17:03:33,002]:INFO: ******************************************************
+[2017-03-02 17:03:33,004]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:03:33,004]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:33,004]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 17:03:33,005]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 17:03:33,006]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:33,006]:INFO: ***********************
+[2017-03-02 17:03:33,006]:INFO: ** Finished Test 105 **
+[2017-03-02 17:03:33,006]:INFO: ***********************
+
+[2017-03-02 17:03:33,007]:INFO: ******************************************************
+[2017-03-02 17:03:33,007]:INFO: ** Starting Test 106 vote command with a vote cast. **
+[2017-03-02 17:03:33,007]:INFO: ******************************************************
+[2017-03-02 17:03:33,007]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:03:33,007]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:33,008]:INFO: Cast a vote with correct option present. Asserting the vote.
+[2017-03-02 17:03:33,008]:INFO: Asserting vote as "vote wrong" has return expected results
+[2017-03-02 17:03:33,008]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:33,008]:INFO: ***********************
+[2017-03-02 17:03:33,008]:INFO: ** Finished Test 106 **
+[2017-03-02 17:03:33,008]:INFO: ***********************
+
+[2017-03-02 17:03:33,008]:INFO: ******************************************************
+[2017-03-02 17:03:33,008]:INFO: ** Starting Test 107 vote command with a vote cast. **
+[2017-03-02 17:03:33,009]:INFO: ******************************************************
+[2017-03-02 17:03:33,009]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:03:33,009]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:33,010]:INFO: Cast a vote with correct option present. Asserting the vote.
+[2017-03-02 17:03:33,010]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 17:03:33,010]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:33,010]:INFO: Cast a vote from the same user. Asserting the vote is not logged.
+[2017-03-02 17:03:33,010]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 17:03:33,011]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:33,011]:INFO: ***********************
+[2017-03-02 17:03:33,011]:INFO: ** Finished Test 107 **
+[2017-03-02 17:03:33,011]:INFO: ***********************
+
+[2017-03-02 17:03:33,012]:INFO: ******************************************************
+[2017-03-02 17:03:33,012]:INFO: ** Starting Test 108 vote command with a vote cast. **
+[2017-03-02 17:03:33,013]:INFO: ******************************************************
+[2017-03-02 17:03:33,013]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:03:33,013]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:33,013]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 17:03:33,014]:INFO: Asserting vote as "vOtE yEs" has return expected results
+[2017-03-02 17:03:33,014]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:33,014]:INFO: ***********************
+[2017-03-02 17:03:33,014]:INFO: ** Finished Test 108 **
+[2017-03-02 17:03:33,014]:INFO: ***********************
+
+[2017-03-02 17:03:33,015]:INFO: ******************************************************
+[2017-03-02 17:03:33,015]:INFO: ** Starting Test 109 vote command with a vote cast. **
+[2017-03-02 17:03:33,015]:INFO: ******************************************************
+[2017-03-02 17:03:33,015]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:03:33,016]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:33,016]:INFO: Cast a vote with user0's option. Asserting the vote logged.
+[2017-03-02 17:03:33,017]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 17:03:33,017]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:33,017]:INFO: Cast a vote with user1's option. Asserting the vote logged.
+[2017-03-02 17:03:33,018]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 17:03:33,018]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:33,019]:INFO: ***********************
+[2017-03-02 17:03:33,019]:INFO: ** Finished Test 109 **
+[2017-03-02 17:03:33,019]:INFO: ***********************
+
+[2017-03-02 17:03:33,021]:INFO: ******************************************************
+[2017-03-02 17:03:33,021]:INFO: ** Starting Test 110 vote command with a vote cast. **
+[2017-03-02 17:03:33,021]:INFO: ******************************************************
+[2017-03-02 17:03:33,023]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:03:33,023]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:33,023]:INFO: Cast a vote with user0's option. Asserting the vote logged.
+[2017-03-02 17:03:33,023]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 17:03:33,023]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:33,024]:INFO: Cast a vote with user1's option. Asserting the vote logged.
+[2017-03-02 17:03:33,024]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 17:03:33,025]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:33,026]:INFO: ***********************
+[2017-03-02 17:03:33,026]:INFO: ** Finished Test 110 **
+[2017-03-02 17:03:33,026]:INFO: ***********************
+
+[2017-03-02 17:03:58,045]:INFO: ******************************************
+[2017-03-02 17:03:58,045]:INFO: ** Starting Test 100 start_vote command **
+[2017-03-02 17:03:58,045]:INFO: ******************************************
+[2017-03-02 17:03:58,046]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:03:58,046]:INFO: Asserting the json
+[2017-03-02 17:03:58,046]:INFO: ***********************
+[2017-03-02 17:03:58,046]:INFO: ** Finished Test 100 **
+[2017-03-02 17:03:58,046]:INFO: ***********************
+
+[2017-03-02 17:03:58,047]:INFO: ********************************************
+[2017-03-02 17:03:58,047]:INFO: ** Starting Test 101 start_vote camelcase **
+[2017-03-02 17:03:58,047]:INFO: ********************************************
+[2017-03-02 17:03:58,047]:INFO: Asserting start_vote as "sTaRt_vOte" has return expected results
+[2017-03-02 17:03:58,047]:INFO: Asserting the json
+[2017-03-02 17:03:58,048]:INFO: ***********************
+[2017-03-02 17:03:58,048]:INFO: ** Finished Test 101 **
+[2017-03-02 17:03:58,048]:INFO: ***********************
+
+[2017-03-02 17:03:58,057]:INFO: ***********************************************
+[2017-03-02 17:03:58,057]:INFO: ** Starting Test 102 start_vote with options **
+[2017-03-02 17:03:58,057]:INFO: ***********************************************
+[2017-03-02 17:03:58,057]:INFO: Asserting start_vote as "start_vote test1, test2, test3" has return expected results
+[2017-03-02 17:03:58,057]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:58,058]:INFO: ***********************
+[2017-03-02 17:03:58,058]:INFO: ** Finished Test 102 **
+[2017-03-02 17:03:58,058]:INFO: ***********************
+
+[2017-03-02 17:03:58,060]:INFO: ***************************************************
+[2017-03-02 17:03:58,060]:INFO: ** Starting Test 103 start_vote with one option. **
+[2017-03-02 17:03:58,060]:INFO: ***************************************************
+[2017-03-02 17:03:58,060]:INFO: Asserting start_vote as "start_vote test1" has return expected results
+[2017-03-02 17:03:58,060]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:58,060]:INFO: ***********************
+[2017-03-02 17:03:58,060]:INFO: ** Finished Test 103 **
+[2017-03-02 17:03:58,060]:INFO: ***********************
+
+[2017-03-02 17:03:58,062]:INFO: *******************************************************
+[2017-03-02 17:03:58,062]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-02 17:03:58,062]:INFO: *******************************************************
+[2017-03-02 17:03:58,062]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:03:58,063]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:58,063]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 17:03:58,063]:INFO: Asserting vote as "vote " has return expected results
+[2017-03-02 17:03:58,063]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:58,063]:INFO: ***********************
+[2017-03-02 17:03:58,063]:INFO: ** Finished Test 104 **
+[2017-03-02 17:03:58,063]:INFO: ***********************
+
+[2017-03-02 17:03:58,064]:INFO: ******************************************************
+[2017-03-02 17:03:58,064]:INFO: ** Starting Test 105 vote command with a vote cast. **
+[2017-03-02 17:03:58,064]:INFO: ******************************************************
+[2017-03-02 17:03:58,064]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:03:58,064]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:58,065]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 17:03:58,066]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 17:03:58,066]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:58,066]:INFO: ***********************
+[2017-03-02 17:03:58,066]:INFO: ** Finished Test 105 **
+[2017-03-02 17:03:58,066]:INFO: ***********************
+
+[2017-03-02 17:03:58,067]:INFO: ******************************************************
+[2017-03-02 17:03:58,067]:INFO: ** Starting Test 106 vote command with a vote cast. **
+[2017-03-02 17:03:58,067]:INFO: ******************************************************
+[2017-03-02 17:03:58,070]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:03:58,070]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:58,070]:INFO: Cast a vote with correct option present. Asserting the vote.
+[2017-03-02 17:03:58,070]:INFO: Asserting vote as "vote wrong" has return expected results
+[2017-03-02 17:03:58,070]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:58,070]:INFO: ***********************
+[2017-03-02 17:03:58,070]:INFO: ** Finished Test 106 **
+[2017-03-02 17:03:58,070]:INFO: ***********************
+
+[2017-03-02 17:03:58,073]:INFO: ******************************************************
+[2017-03-02 17:03:58,073]:INFO: ** Starting Test 107 vote command with a vote cast. **
+[2017-03-02 17:03:58,073]:INFO: ******************************************************
+[2017-03-02 17:03:58,075]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:03:58,075]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:58,075]:INFO: Cast a vote with correct option present. Asserting the vote.
+[2017-03-02 17:03:58,076]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 17:03:58,076]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:58,076]:INFO: Cast a vote from the same user. Asserting the vote is not logged.
+[2017-03-02 17:03:58,076]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 17:03:58,076]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:58,076]:INFO: ***********************
+[2017-03-02 17:03:58,076]:INFO: ** Finished Test 107 **
+[2017-03-02 17:03:58,076]:INFO: ***********************
+
+[2017-03-02 17:03:58,086]:INFO: ******************************************************
+[2017-03-02 17:03:58,086]:INFO: ** Starting Test 108 vote command with a vote cast. **
+[2017-03-02 17:03:58,086]:INFO: ******************************************************
+[2017-03-02 17:03:58,094]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:03:58,094]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:58,095]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-02 17:03:58,096]:INFO: Asserting vote as "vOtE yEs" has return expected results
+[2017-03-02 17:03:58,096]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:58,096]:INFO: ***********************
+[2017-03-02 17:03:58,096]:INFO: ** Finished Test 108 **
+[2017-03-02 17:03:58,096]:INFO: ***********************
+
+[2017-03-02 17:03:58,097]:INFO: ******************************************************
+[2017-03-02 17:03:58,097]:INFO: ** Starting Test 109 vote command with a vote cast. **
+[2017-03-02 17:03:58,097]:INFO: ******************************************************
+[2017-03-02 17:03:58,099]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:03:58,099]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:58,099]:INFO: Cast a vote with user0's option. Asserting the vote logged.
+[2017-03-02 17:03:58,101]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 17:03:58,101]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:58,101]:INFO: Cast a vote with user1's option. Asserting the vote logged.
+[2017-03-02 17:03:58,101]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 17:03:58,101]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:58,102]:INFO: ***********************
+[2017-03-02 17:03:58,102]:INFO: ** Finished Test 109 **
+[2017-03-02 17:03:58,102]:INFO: ***********************
+
+[2017-03-02 17:03:58,102]:INFO: ******************************************************
+[2017-03-02 17:03:58,102]:INFO: ** Starting Test 110 vote command with a vote cast. **
+[2017-03-02 17:03:58,102]:INFO: ******************************************************
+[2017-03-02 17:03:58,103]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-02 17:03:58,103]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:58,103]:INFO: Cast a vote with user0's option. Asserting the vote logged.
+[2017-03-02 17:03:58,103]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 17:03:58,104]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:58,104]:INFO: Cast a vote with user1's option. Asserting the vote logged.
+[2017-03-02 17:03:58,104]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-02 17:03:58,104]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-02 17:03:58,104]:INFO: ***********************
+[2017-03-02 17:03:58,104]:INFO: ** Finished Test 110 **
+[2017-03-02 17:03:58,105]:INFO: ***********************
+
+[2017-03-03 12:26:39,786]:INFO: ******************************************
+[2017-03-03 12:26:39,786]:INFO: ** Starting Test 100 start_vote command **
+[2017-03-03 12:26:39,786]:INFO: ******************************************
+[2017-03-03 12:26:39,787]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-03 12:26:39,787]:INFO: Asserting the json
+[2017-03-03 12:26:39,787]:INFO: ***********************
+[2017-03-03 12:26:39,787]:INFO: ** Finished Test 100 **
+[2017-03-03 12:26:39,787]:INFO: ***********************
+
+[2017-03-03 12:26:39,788]:INFO: ********************************************
+[2017-03-03 12:26:39,788]:INFO: ** Starting Test 101 start_vote camelcase **
+[2017-03-03 12:26:39,788]:INFO: ********************************************
+[2017-03-03 12:26:39,789]:INFO: Asserting start_vote as "sTaRt_vOte" has return expected results
+[2017-03-03 12:26:39,789]:INFO: Asserting the json
+[2017-03-03 12:26:39,789]:INFO: ***********************
+[2017-03-03 12:26:39,789]:INFO: ** Finished Test 101 **
+[2017-03-03 12:26:39,789]:INFO: ***********************
+
+[2017-03-03 12:26:39,790]:INFO: ***********************************************
+[2017-03-03 12:26:39,790]:INFO: ** Starting Test 102 start_vote with options **
+[2017-03-03 12:26:39,790]:INFO: ***********************************************
+[2017-03-03 12:26:39,790]:INFO: Asserting start_vote as "start_vote test1, test2, test3" has return expected results
+[2017-03-03 12:26:39,790]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:26:39,790]:INFO: ***********************
+[2017-03-03 12:26:39,790]:INFO: ** Finished Test 102 **
+[2017-03-03 12:26:39,790]:INFO: ***********************
+
+[2017-03-03 12:26:39,791]:INFO: ***************************************************
+[2017-03-03 12:26:39,791]:INFO: ** Starting Test 103 start_vote with one option. **
+[2017-03-03 12:26:39,791]:INFO: ***************************************************
+[2017-03-03 12:26:39,791]:INFO: Asserting start_vote as "start_vote test1" has return expected results
+[2017-03-03 12:26:39,791]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:26:39,792]:INFO: ***********************
+[2017-03-03 12:26:39,792]:INFO: ** Finished Test 103 **
+[2017-03-03 12:26:39,792]:INFO: ***********************
+
+[2017-03-03 12:26:39,792]:INFO: *******************************************************
+[2017-03-03 12:26:39,792]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-03 12:26:39,792]:INFO: *******************************************************
+[2017-03-03 12:26:39,793]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-03 12:26:39,793]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:26:39,793]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-03 12:26:39,793]:INFO: Asserting vote as "vote " has return expected results
+[2017-03-03 12:26:39,793]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:26:39,794]:INFO: ***********************
+[2017-03-03 12:26:39,794]:INFO: ** Finished Test 104 **
+[2017-03-03 12:26:39,794]:INFO: ***********************
+
+[2017-03-03 12:26:39,794]:INFO: ******************************************************
+[2017-03-03 12:26:39,794]:INFO: ** Starting Test 105 vote command with a vote cast. **
+[2017-03-03 12:26:39,794]:INFO: ******************************************************
+[2017-03-03 12:26:39,795]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-03 12:26:39,795]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:26:39,795]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-03 12:26:39,795]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 12:26:39,796]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:26:39,796]:INFO: ***********************
+[2017-03-03 12:26:39,796]:INFO: ** Finished Test 105 **
+[2017-03-03 12:26:39,796]:INFO: ***********************
+
+[2017-03-03 12:26:39,796]:INFO: ******************************************************
+[2017-03-03 12:26:39,796]:INFO: ** Starting Test 106 vote command with a vote cast. **
+[2017-03-03 12:26:39,796]:INFO: ******************************************************
+[2017-03-03 12:26:39,797]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-03 12:26:39,797]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:26:39,797]:INFO: Cast a vote with correct option present. Asserting the vote.
+[2017-03-03 12:26:39,797]:INFO: Asserting vote as "vote wrong" has return expected results
+[2017-03-03 12:26:39,797]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:26:39,797]:INFO: ***********************
+[2017-03-03 12:26:39,797]:INFO: ** Finished Test 106 **
+[2017-03-03 12:26:39,797]:INFO: ***********************
+
+[2017-03-03 12:26:39,798]:INFO: ******************************************************
+[2017-03-03 12:26:39,798]:INFO: ** Starting Test 107 vote command with a vote cast. **
+[2017-03-03 12:26:39,798]:INFO: ******************************************************
+[2017-03-03 12:26:39,798]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-03 12:26:39,799]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:26:39,799]:INFO: Cast a vote with correct option present. Asserting the vote.
+[2017-03-03 12:26:39,799]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 12:26:39,799]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:26:39,799]:INFO: Cast a vote from the same user. Asserting the vote is not logged.
+[2017-03-03 12:26:39,800]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 12:26:39,800]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:26:39,800]:INFO: ***********************
+[2017-03-03 12:26:39,800]:INFO: ** Finished Test 107 **
+[2017-03-03 12:26:39,800]:INFO: ***********************
+
+[2017-03-03 12:26:39,800]:INFO: ******************************************************
+[2017-03-03 12:26:39,801]:INFO: ** Starting Test 108 vote command with a vote cast. **
+[2017-03-03 12:26:39,801]:INFO: ******************************************************
+[2017-03-03 12:26:39,801]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-03 12:26:39,801]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:26:39,801]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-03 12:26:39,802]:INFO: Asserting vote as "vOtE yEs" has return expected results
+[2017-03-03 12:26:39,802]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:26:39,802]:INFO: ***********************
+[2017-03-03 12:26:39,802]:INFO: ** Finished Test 108 **
+[2017-03-03 12:26:39,802]:INFO: ***********************
+
+[2017-03-03 12:26:39,803]:INFO: ******************************************************
+[2017-03-03 12:26:39,803]:INFO: ** Starting Test 109 vote command with a vote cast. **
+[2017-03-03 12:26:39,803]:INFO: ******************************************************
+[2017-03-03 12:26:39,804]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-03 12:26:39,804]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:26:39,804]:INFO: Cast a vote with user0's option. Asserting the vote logged.
+[2017-03-03 12:26:39,804]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 12:26:39,805]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:26:39,805]:INFO: Cast a vote with user1's option. Asserting the vote logged.
+[2017-03-03 12:26:39,805]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 12:26:39,805]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:26:39,805]:INFO: Cast a vote with user2's option. Asserting the vote logged.
+[2017-03-03 12:26:39,806]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 12:26:39,806]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:26:39,806]:INFO: Cast a vote with user3's option. Asserting the vote logged.
+[2017-03-03 12:26:39,806]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 12:26:39,807]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:26:39,807]:INFO: Cast a vote with user4's option. Asserting the vote logged.
+[2017-03-03 12:26:39,807]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 12:26:39,807]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:26:39,808]:INFO: ***********************
+[2017-03-03 12:26:39,808]:INFO: ** Finished Test 109 **
+[2017-03-03 12:26:39,808]:INFO: ***********************
+
+[2017-03-03 12:26:39,808]:INFO: ******************************************************
+[2017-03-03 12:26:39,808]:INFO: ** Starting Test 110 vote command with a vote cast. **
+[2017-03-03 12:26:39,808]:INFO: ******************************************************
+[2017-03-03 12:26:39,809]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-03 12:26:39,809]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:26:39,809]:INFO: Cast a vote with user0's option. Asserting the vote logged.
+[2017-03-03 12:26:39,810]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 12:26:39,810]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:26:39,810]:INFO: Cast a vote with user1's option. Asserting the vote logged.
+[2017-03-03 12:26:39,810]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 12:26:39,810]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:26:39,811]:INFO: ***********************
+[2017-03-03 12:26:39,811]:INFO: ** Finished Test 110 **
+[2017-03-03 12:26:39,811]:INFO: ***********************
+
+[2017-03-03 12:27:01,629]:INFO: ******************************************
+[2017-03-03 12:27:01,629]:INFO: ** Starting Test 100 start_vote command **
+[2017-03-03 12:27:01,629]:INFO: ******************************************
+[2017-03-03 12:27:01,630]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-03 12:27:01,630]:INFO: Asserting the json
+[2017-03-03 12:27:01,630]:INFO: ***********************
+[2017-03-03 12:27:01,630]:INFO: ** Finished Test 100 **
+[2017-03-03 12:27:01,630]:INFO: ***********************
+
+[2017-03-03 12:27:01,636]:INFO: ********************************************
+[2017-03-03 12:27:01,636]:INFO: ** Starting Test 101 start_vote camelcase **
+[2017-03-03 12:27:01,636]:INFO: ********************************************
+[2017-03-03 12:27:01,639]:INFO: Asserting start_vote as "sTaRt_vOte" has return expected results
+[2017-03-03 12:27:01,640]:INFO: Asserting the json
+[2017-03-03 12:27:01,640]:INFO: ***********************
+[2017-03-03 12:27:01,640]:INFO: ** Finished Test 101 **
+[2017-03-03 12:27:01,640]:INFO: ***********************
+
+[2017-03-03 12:27:01,640]:INFO: ***********************************************
+[2017-03-03 12:27:01,640]:INFO: ** Starting Test 102 start_vote with options **
+[2017-03-03 12:27:01,640]:INFO: ***********************************************
+[2017-03-03 12:27:01,641]:INFO: Asserting start_vote as "start_vote test1, test2, test3" has return expected results
+[2017-03-03 12:27:01,641]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:27:01,641]:INFO: ***********************
+[2017-03-03 12:27:01,641]:INFO: ** Finished Test 102 **
+[2017-03-03 12:27:01,641]:INFO: ***********************
+
+[2017-03-03 12:27:01,642]:INFO: ***************************************************
+[2017-03-03 12:27:01,642]:INFO: ** Starting Test 103 start_vote with one option. **
+[2017-03-03 12:27:01,642]:INFO: ***************************************************
+[2017-03-03 12:27:01,642]:INFO: Asserting start_vote as "start_vote test1" has return expected results
+[2017-03-03 12:27:01,642]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:27:01,642]:INFO: ***********************
+[2017-03-03 12:27:01,642]:INFO: ** Finished Test 103 **
+[2017-03-03 12:27:01,642]:INFO: ***********************
+
+[2017-03-03 12:27:01,643]:INFO: *******************************************************
+[2017-03-03 12:27:01,643]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-03 12:27:01,643]:INFO: *******************************************************
+[2017-03-03 12:27:01,643]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-03 12:27:01,643]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:27:01,644]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-03 12:27:01,644]:INFO: Asserting vote as "vote " has return expected results
+[2017-03-03 12:27:01,644]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:27:01,644]:INFO: ***********************
+[2017-03-03 12:27:01,644]:INFO: ** Finished Test 104 **
+[2017-03-03 12:27:01,644]:INFO: ***********************
+
+[2017-03-03 12:27:01,644]:INFO: ******************************************************
+[2017-03-03 12:27:01,644]:INFO: ** Starting Test 105 vote command with a vote cast. **
+[2017-03-03 12:27:01,644]:INFO: ******************************************************
+[2017-03-03 12:27:01,647]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-03 12:27:01,647]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:27:01,648]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-03 12:27:01,648]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 12:27:01,648]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:27:01,649]:INFO: ***********************
+[2017-03-03 12:27:01,649]:INFO: ** Finished Test 105 **
+[2017-03-03 12:27:01,649]:INFO: ***********************
+
+[2017-03-03 12:27:01,649]:INFO: ******************************************************
+[2017-03-03 12:27:01,649]:INFO: ** Starting Test 106 vote command with a vote cast. **
+[2017-03-03 12:27:01,649]:INFO: ******************************************************
+[2017-03-03 12:27:01,650]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-03 12:27:01,650]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:27:01,650]:INFO: Cast a vote with correct option present. Asserting the vote.
+[2017-03-03 12:27:01,650]:INFO: Asserting vote as "vote wrong" has return expected results
+[2017-03-03 12:27:01,650]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:27:01,650]:INFO: ***********************
+[2017-03-03 12:27:01,650]:INFO: ** Finished Test 106 **
+[2017-03-03 12:27:01,650]:INFO: ***********************
+
+[2017-03-03 12:27:01,651]:INFO: ******************************************************
+[2017-03-03 12:27:01,651]:INFO: ** Starting Test 107 vote command with a vote cast. **
+[2017-03-03 12:27:01,651]:INFO: ******************************************************
+[2017-03-03 12:27:01,652]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-03 12:27:01,652]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:27:01,652]:INFO: Cast a vote with correct option present. Asserting the vote.
+[2017-03-03 12:27:01,652]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 12:27:01,652]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:27:01,653]:INFO: Cast a vote from the same user. Asserting the vote is not logged.
+[2017-03-03 12:27:01,653]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 12:27:01,653]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:27:01,653]:INFO: ***********************
+[2017-03-03 12:27:01,653]:INFO: ** Finished Test 107 **
+[2017-03-03 12:27:01,653]:INFO: ***********************
+
+[2017-03-03 12:27:01,654]:INFO: ******************************************************
+[2017-03-03 12:27:01,654]:INFO: ** Starting Test 108 vote command with a vote cast. **
+[2017-03-03 12:27:01,654]:INFO: ******************************************************
+[2017-03-03 12:27:01,654]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-03 12:27:01,654]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:27:01,655]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-03 12:27:01,655]:INFO: Asserting vote as "vOtE yEs" has return expected results
+[2017-03-03 12:27:01,655]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:27:01,655]:INFO: ***********************
+[2017-03-03 12:27:01,656]:INFO: ** Finished Test 108 **
+[2017-03-03 12:27:01,656]:INFO: ***********************
+
+[2017-03-03 12:27:01,656]:INFO: ******************************************************
+[2017-03-03 12:27:01,656]:INFO: ** Starting Test 109 vote command with a vote cast. **
+[2017-03-03 12:27:01,657]:INFO: ******************************************************
+[2017-03-03 12:27:01,657]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-03 12:27:01,657]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:27:01,657]:INFO: Cast a vote with user0's option. Asserting the vote logged.
+[2017-03-03 12:27:01,658]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 12:27:01,658]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:27:01,658]:INFO: Cast a vote with user1's option. Asserting the vote logged.
+[2017-03-03 12:27:01,659]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 12:27:01,659]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:27:01,659]:INFO: ***********************
+[2017-03-03 12:27:01,659]:INFO: ** Finished Test 109 **
+[2017-03-03 12:27:01,659]:INFO: ***********************
+
+[2017-03-03 12:27:01,660]:INFO: ******************************************************
+[2017-03-03 12:27:01,660]:INFO: ** Starting Test 110 vote command with a vote cast. **
+[2017-03-03 12:27:01,660]:INFO: ******************************************************
+[2017-03-03 12:27:01,660]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-03 12:27:01,661]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:27:01,661]:INFO: Cast a vote with user0's option. Asserting the vote logged.
+[2017-03-03 12:27:01,661]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 12:27:01,661]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:27:01,662]:INFO: Cast a vote with user1's option. Asserting the vote logged.
+[2017-03-03 12:27:01,662]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 12:27:01,662]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:27:01,662]:INFO: Cast a vote with user2's option. Asserting the vote logged.
+[2017-03-03 12:27:01,663]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 12:27:01,663]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:27:01,663]:INFO: Cast a vote with user3's option. Asserting the vote logged.
+[2017-03-03 12:27:01,664]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 12:27:01,664]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:27:01,664]:INFO: Cast a vote with user4's option. Asserting the vote logged.
+[2017-03-03 12:27:01,664]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 12:27:01,664]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 12:27:01,665]:INFO: ***********************
+[2017-03-03 12:27:01,665]:INFO: ** Finished Test 110 **
+[2017-03-03 12:27:01,665]:INFO: ***********************
+
+[2017-03-03 16:44:46,147]:INFO: ******************************************
+[2017-03-03 16:44:46,147]:INFO: ** Starting Test 100 start_vote command **
+[2017-03-03 16:44:46,147]:INFO: ******************************************
+[2017-03-03 16:44:46,147]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-03 16:44:46,148]:INFO: Asserting the json
+[2017-03-03 16:44:46,148]:INFO: ***********************
+[2017-03-03 16:44:46,148]:INFO: ** Finished Test 100 **
+[2017-03-03 16:44:46,148]:INFO: ***********************
+
+[2017-03-03 16:44:46,148]:INFO: ********************************************
+[2017-03-03 16:44:46,149]:INFO: ** Starting Test 101 start_vote camelcase **
+[2017-03-03 16:44:46,149]:INFO: ********************************************
+[2017-03-03 16:44:46,149]:INFO: Asserting start_vote as "sTaRt_vOte" has return expected results
+[2017-03-03 16:44:46,149]:INFO: Asserting the json
+[2017-03-03 16:44:46,149]:INFO: ***********************
+[2017-03-03 16:44:46,149]:INFO: ** Finished Test 101 **
+[2017-03-03 16:44:46,150]:INFO: ***********************
+
+[2017-03-03 16:44:46,150]:INFO: ***********************************************
+[2017-03-03 16:44:46,150]:INFO: ** Starting Test 102 start_vote with options **
+[2017-03-03 16:44:46,150]:INFO: ***********************************************
+[2017-03-03 16:44:46,151]:INFO: Asserting start_vote as "start_vote test1, test2, test3" has return expected results
+[2017-03-03 16:44:46,151]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 16:44:46,151]:INFO: ***********************
+[2017-03-03 16:44:46,151]:INFO: ** Finished Test 102 **
+[2017-03-03 16:44:46,151]:INFO: ***********************
+
+[2017-03-03 16:44:46,152]:INFO: ***************************************************
+[2017-03-03 16:44:46,152]:INFO: ** Starting Test 103 start_vote with one option. **
+[2017-03-03 16:44:46,152]:INFO: ***************************************************
+[2017-03-03 16:44:46,152]:INFO: Asserting start_vote as "start_vote test1" has return expected results
+[2017-03-03 16:44:46,152]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 16:44:46,152]:INFO: ***********************
+[2017-03-03 16:44:46,152]:INFO: ** Finished Test 103 **
+[2017-03-03 16:44:46,152]:INFO: ***********************
+
+[2017-03-03 16:44:46,153]:INFO: *******************************************************
+[2017-03-03 16:44:46,153]:INFO: ** Starting Test 104 vote command with no vote cast. **
+[2017-03-03 16:44:46,153]:INFO: *******************************************************
+[2017-03-03 16:44:46,154]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-03 16:44:46,154]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 16:44:46,154]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-03 16:44:46,154]:INFO: Asserting vote as "vote " has return expected results
+[2017-03-03 16:44:46,154]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 16:44:46,154]:INFO: ***********************
+[2017-03-03 16:44:46,154]:INFO: ** Finished Test 104 **
+[2017-03-03 16:44:46,154]:INFO: ***********************
+
+[2017-03-03 16:44:46,156]:INFO: ******************************************************
+[2017-03-03 16:44:46,156]:INFO: ** Starting Test 105 vote command with a vote cast. **
+[2017-03-03 16:44:46,156]:INFO: ******************************************************
+[2017-03-03 16:44:46,157]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-03 16:44:46,157]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 16:44:46,157]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-03 16:44:46,158]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 16:44:46,158]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 16:44:46,158]:INFO: ***********************
+[2017-03-03 16:44:46,158]:INFO: ** Finished Test 105 **
+[2017-03-03 16:44:46,158]:INFO: ***********************
+
+[2017-03-03 16:44:46,158]:INFO: ******************************************************
+[2017-03-03 16:44:46,159]:INFO: ** Starting Test 106 vote command with a vote cast. **
+[2017-03-03 16:44:46,159]:INFO: ******************************************************
+[2017-03-03 16:44:46,159]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-03 16:44:46,159]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 16:44:46,159]:INFO: Cast a vote with correct option present. Asserting the vote.
+[2017-03-03 16:44:46,159]:INFO: Asserting vote as "vote wrong" has return expected results
+[2017-03-03 16:44:46,160]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 16:44:46,160]:INFO: ***********************
+[2017-03-03 16:44:46,160]:INFO: ** Finished Test 106 **
+[2017-03-03 16:44:46,160]:INFO: ***********************
+
+[2017-03-03 16:44:46,160]:INFO: ******************************************************
+[2017-03-03 16:44:46,160]:INFO: ** Starting Test 107 vote command with a vote cast. **
+[2017-03-03 16:44:46,160]:INFO: ******************************************************
+[2017-03-03 16:44:46,161]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-03 16:44:46,161]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 16:44:46,161]:INFO: Cast a vote with correct option present. Asserting the vote.
+[2017-03-03 16:44:46,161]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 16:44:46,162]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 16:44:46,162]:INFO: Cast a vote from the same user. Asserting the vote is not logged.
+[2017-03-03 16:44:46,162]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 16:44:46,162]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 16:44:46,162]:INFO: ***********************
+[2017-03-03 16:44:46,162]:INFO: ** Finished Test 107 **
+[2017-03-03 16:44:46,162]:INFO: ***********************
+
+[2017-03-03 16:44:46,163]:INFO: ******************************************************
+[2017-03-03 16:44:46,163]:INFO: ** Starting Test 108 vote command with a vote cast. **
+[2017-03-03 16:44:46,163]:INFO: ******************************************************
+[2017-03-03 16:44:46,163]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-03 16:44:46,163]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 16:44:46,164]:INFO: Cast a vote with no option present. Asserting the blank vote
+[2017-03-03 16:44:46,165]:INFO: Asserting vote as "vOtE yEs" has return expected results
+[2017-03-03 16:44:46,165]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 16:44:46,165]:INFO: ***********************
+[2017-03-03 16:44:46,165]:INFO: ** Finished Test 108 **
+[2017-03-03 16:44:46,165]:INFO: ***********************
+
+[2017-03-03 16:44:46,166]:INFO: ******************************************************
+[2017-03-03 16:44:46,166]:INFO: ** Starting Test 109 vote command with a vote cast. **
+[2017-03-03 16:44:46,166]:INFO: ******************************************************
+[2017-03-03 16:44:46,166]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-03 16:44:46,166]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 16:44:46,166]:INFO: Cast a vote with user0's option. Asserting the vote logged.
+[2017-03-03 16:44:46,167]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 16:44:46,167]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 16:44:46,168]:INFO: Cast a vote with user1's option. Asserting the vote logged.
+[2017-03-03 16:44:46,168]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 16:44:46,168]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 16:44:46,168]:INFO: ***********************
+[2017-03-03 16:44:46,168]:INFO: ** Finished Test 109 **
+[2017-03-03 16:44:46,168]:INFO: ***********************
+
+[2017-03-03 16:44:46,169]:INFO: ******************************************************
+[2017-03-03 16:44:46,169]:INFO: ** Starting Test 110 vote command with a vote cast. **
+[2017-03-03 16:44:46,169]:INFO: ******************************************************
+[2017-03-03 16:44:46,169]:INFO: Asserting start_vote as "start_vote" has return expected results
+[2017-03-03 16:44:46,169]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 16:44:46,170]:INFO: Cast a vote with user0's option. Asserting the vote logged.
+[2017-03-03 16:44:46,170]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 16:44:46,170]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 16:44:46,170]:INFO: Cast a vote with user1's option. Asserting the vote logged.
+[2017-03-03 16:44:46,171]:INFO: Asserting vote as "vote yes" has return expected results
+[2017-03-03 16:44:46,171]:INFO: Asserting the json in the test file matches the expected json
+[2017-03-03 16:44:46,171]:INFO: Cast a vote with a user that has already voted. Asserting the vote is not logged.
+[2017-03-03 16:44:46,171]:INFO: Asserting vote as "vote no" has return expected results
+[2017-03-03 16:44:46,171]:INFO: ***********************
+[2017-03-03 16:44:46,171]:INFO: ** Finished Test 110 **
+[2017-03-03 16:44:46,171]:INFO: ***********************
+
