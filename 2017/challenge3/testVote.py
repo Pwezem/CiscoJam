@@ -225,9 +225,55 @@ class testVote(unittest.TestCase):
     ###################################
 
     def test_111_end_vote_with_no_votes(self):
+        """
+            Test to check end_vote returns expected response.
+            start_vote -> default options -> end_vote -> assert response.
+        """
+        self.utils.banner("Starting Test 111 end_vote command with no votes cast.")
         self.assert_start_vote(test="111")
 
-        self.vote.handle_message("end_votel")
+        response = self.vote.handle_message("end_vote", user_email="test_email@email.mail")
+        expected_response = "**No Votes Cast**<br>Ending vote."
+        #"**Votes are in!**<br>yes: 0<br>no: 0<br>**The winner is**<br>"
+        self.assertTrue(response == expected_response,
+                        "Failed, expect response to end_vote was %s. Actual response is %s"
+                        % (expected_response, response))
+
+        self.utils.end_banner("Finished Test 111")
+
+    def test_112_end_vote_camel_case_with_no_votes(self):
+        """
+            Test to check end_vote in camelcase returns expected response.
+            start_vote -> default options -> end_vote -> assert response.
+        """
+        self.utils.banner("Starting Test 112 end_vote command with camelcase.")
+        self.assert_start_vote(test="112")
+
+        response = self.vote.handle_message("eNd_VoTe", user_email="test_email@email.mail")
+        expected_response = "**No Votes Cast**<br>Ending vote."
+        self.assertTrue(response == expected_response,
+                        "Failed, expect response to end_vote was %s. Actual response is %s."
+                        % (expected_response, response))
+
+        self.utils.end_banner("Finished Test 112")
+
+    def test_113_end_vote_with_a_vote_cast(self):
+        """
+            Test to check end_vote returns expected response with a vote cast.
+            start_vote -> default options -> user votes -> logged -> end_vote
+            -> assert response.
+        """
+        self.utils.banner("Starting Test 113 end_vote command with a vote cast.")
+
+        self.vote_x_times_different_users(test="113")
+
+        response = self.vote.handle_message("end_vote", user_email="test_email@email.mail")
+        expected_response = "**Votes are in!**<br>yes: 2<br>no: 0<br>**The winner is**<br>yes"
+        self.assertTrue(response == expected_response,
+                        "Failed, expect response to end_vote was %s. Actual response is %s."
+                        % (expected_response, response))
+
+        self.utils.end_banner("Finished Test 113")
 
     def vote_x_times_different_users(self, x=2, test="109"):
         self.assert_start_vote(test=test)
@@ -269,7 +315,7 @@ class testVote(unittest.TestCase):
                 start_vote, options))
 
         self.assertTrue(expected_response == response,
-                        "ERROR start_vote %s failed: Expected %s, Actual %s"
+                        "ERROR start_vote %s failed: Expected \"%s\", Actual \"%s\""
                         % (test, expected_response, response))
 
     def assert_json(self, expected_json=None):
@@ -279,7 +325,7 @@ class testVote(unittest.TestCase):
         actual_json = self.get_vote_file_json()
 
         self.assertTrue(actual_json == expected_json,
-                        "ERROR json was incorrect failed: Expected: %s, Actual: %s"
+                        "ERROR json was incorrect failed: Expected: \"%s\", Actual: \"%s\""
                         % (expected_json, actual_json))
 
     def get_vote_file_json(self):
