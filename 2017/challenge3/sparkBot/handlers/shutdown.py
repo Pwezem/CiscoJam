@@ -16,4 +16,4 @@ class ShutDown(MessageHandler):
         return False
 
     def help(self):
-        return "shutdown - shuts down the bot."
+        return "**shutdown** - shuts down the bot."
