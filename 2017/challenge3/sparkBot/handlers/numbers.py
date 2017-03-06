@@ -13,7 +13,7 @@ class Numbers(MessageHandler):
         large_nums = [25, 50, 75, 100]
         small_nums = [1 , 1 , 2 , 2 , 3 , 3 , 4 , 4 , 5 , 5 , 6 , 6 , 7 , 7 , 8 , 8 , 9 , 9 , 10 , 10 ]
 
-        if str(raw_msg).lower() == "numbers":
+        if "numbers" in str(raw_msg).lower():
             return self.get_numbers(raw_msg[7::])
         return False
 
