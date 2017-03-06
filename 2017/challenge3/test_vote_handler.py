@@ -13,6 +13,8 @@ class testVote(unittest.TestCase):
     def setUpClass(cls):
         super(testVote, cls).setUpClass()
         log.getLogger("testVote")
+        with open("test_logs/vote_test.logs", 'w') as file:
+            file.truncate()
         log.basicConfig(filename='test_logs/vote_test.log', level=log.DEBUG,
                         format='[%(asctime)s]:%(levelname)s: %(message)s')
         cls.utils = Utils()
