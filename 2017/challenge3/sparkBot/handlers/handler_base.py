@@ -9,7 +9,7 @@ class MessageHandler(object):
     __metaclass__ = ABCMeta
 
     @abstractmethod
-    def handle_message(self, raw_msg, user_email):
+    def handle_message(self, raw_msg, user_email, username):
         """Decide if the message is meant for you, and handle it."""
         pass
 

@@ -13,7 +13,7 @@ class testVote(unittest.TestCase):
     def setUpClass(cls):
         super(testVote, cls).setUpClass()
         log.getLogger("testVote")
-        with open("test_logs/vote_test.logs", 'w') as file:
+        with open("test_logs/vote_test.log", 'w') as file:
             file.truncate()
         log.basicConfig(filename='test_logs/vote_test.log', level=log.DEBUG,
                         format='[%(asctime)s]:%(levelname)s: %(message)s')
@@ -234,7 +234,7 @@ class testVote(unittest.TestCase):
         self.utils.banner("Starting Test 111 end_vote command with no votes cast.")
         self.assert_start_vote(test="111")
 
-        response = self.vote.handle_message("end_vote", user_email="test_email@email.mail")
+        response = self.vote.handle_message("end_vote", user_email="test_email@email.mail", username="Testa")
         expected_response = "**No Votes Cast**<br>Ending vote."
         #"**Votes are in!**<br>yes: 0<br>no: 0<br>**The winner is**<br>"
         self.assertTrue(response == expected_response,
@@ -251,7 +251,7 @@ class testVote(unittest.TestCase):
         self.utils.banner("Starting Test 112 end_vote command with camelcase.")
         self.assert_start_vote(test="112")
 
-        response = self.vote.handle_message("eNd_VoTe", user_email="test_email@email.mail")
+        response = self.vote.handle_message("eNd_VoTe", user_email="test_email@email.mail", username="Testa")
         expected_response = "**No Votes Cast**<br>Ending vote."
         self.assertTrue(response == expected_response,
                         "Failed, expect response to end_vote was %s. Actual response is %s."
@@ -269,7 +269,7 @@ class testVote(unittest.TestCase):
 
         self.vote_x_times_different_users(test="113")
 
-        response = self.vote.handle_message("end_vote", user_email="test_email@email.mail")
+        response = self.vote.handle_message("end_vote", user_email="test_email@email.mail", username="Testa")
         expected_response = "**Votes are in!**<br>yes: 2<br>no: 0<br>**The winner is**<br>yes"
         self.assertTrue(response == expected_response,
                         "Failed, expect response to end_vote was %s. Actual response is %s."
@@ -297,7 +297,7 @@ class testVote(unittest.TestCase):
 
     def assert_vote(self, vote="vote", expected_response="**No Vote**<br>Please cast a vote!",
                     cast="", test="104", test_mail="test_email@email.mail"):
-        response = self.vote.handle_message("{} {}".format(vote, cast), test_mail)
+        response = self.vote.handle_message("{} {}".format(vote, cast), test_mail, username="Testa")
         log.info("Asserting vote as \"{} {}\" has return expected results".format(
             vote, cast))
 
@@ -308,11 +308,11 @@ class testVote(unittest.TestCase):
     def assert_start_vote(self, start_vote="start_vote", expected_response="**Starting Vote, options:**<br>Yes or No",
                           options=None, test="100", test_mail="test_email@email.mail"):
         if options is None:
-            response = self.vote.handle_message("{}".format(start_vote), test_mail)
+            response = self.vote.handle_message("{}".format(start_vote), test_mail, username="Testa")
             log.info("Asserting start_vote as \"{}\" has return expected results".format(
                 start_vote))
         else:
-            response = self.vote.handle_message("{} {}".format(start_vote, options), test_mail)
+            response = self.vote.handle_message("{} {}".format(start_vote, options), test_mail, username="Testa")
             log.info("Asserting start_vote as \"{} {}\" has return expected results".format(
                 start_vote, options))
 

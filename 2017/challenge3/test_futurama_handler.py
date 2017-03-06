@@ -26,7 +26,8 @@ class testFuturama(unittest.TestCase):
         """
         self.utils.banner("Starting Test 100 futurama command")
 
-        response = self.futurama.handle_message("{}".format("futurama"), "test_email@email.mail")
+        response = self.futurama.handle_message("{}".format("futurama"), "test_email@email.mail",
+                                                username="Testa")
 
         self.assertTrue(response in self.futurama.quotes,
                         "ERROR, response \"%s\" was not in the list of quotes."

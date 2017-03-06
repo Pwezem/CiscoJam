@@ -3,7 +3,7 @@ import importlib
 from spark2d2.bot import Bot
 
 handler_modules = ['repeater.Repeater', 'futurama.Futurama', 'eightball.Eightball', 'shutdown.ShutDown',
-                   'vote.Vote']
+                   'vote.Vote', 'meaningoflife.MeaningOfLife']
 
 
 class botCore(Bot):
@@ -24,15 +24,21 @@ class botCore(Bot):
 
         Bot.__init__(self, bot_token, encryption=True, events=True)
 
-    def process_message(self, raw_msg, user_email=None):
+    def process_message(self, raw_msg, user_email=None, user=None):
         if "help" in raw_msg:
             for handler in self.list_of_handlers:
                 self.responses.append(handler.help())
         else:
             for handler in self.list_of_handlers:
-                self.responses.append(handler.handle_message(raw_msg, user_email))
+                self.responses.append(handler.handle_message(raw_msg, user_email, user))
         return_value = self.responses
         self.responses = []
         return return_value
+
+    def get_user_display_name(self, bot, email):
+        y = bot.get_conversation_list()
+        x = bot.get_user_id(email)
+        return bot._http_client.get(url="https://api.ciscospark.com/v1/people/{}".format(x)).displayName
+
 
 

@@ -24,7 +24,9 @@ def run():
         activity = bot.get_next_post()
         conversation_id = get_room_id(activity)
         raw_msg = remove_mention(activity.object.displayName)
-        responses = bot.process_message(raw_msg, user_email=activity.actor.emailAddress)
+        email = botCore.get_user_display_name(bot, email=activity.actor.emailAddress)
+        responses = bot.process_message(raw_msg, user_email=activity.actor.emailAddress,
+                                        username=email)
         count = 0
         for value in responses:
             if value is not False and bot.response_string == " ":

@@ -1,23 +1,19 @@
 from handler_base import MessageHandler
-import os
+import json
 import random
 
-class Eightball(MessageHandler):     
+
+class Eightball(MessageHandler):
     
-    def __init__(self):         
+    def __init__(self):
+        with open("handlers/data_files/eightball.json") as json_file:
+            self.data = json.load(json_file)
         pass      
     
-    def handle_message(self, raw_msg, user_email):
-        if raw_msg == "eightball":
-            predictions_file = os.path.join(os.path.dirname(__file__), 'text_files/eightball_predictions.txt')             
-            return self.get_prediction(predictions_file)         
+    def handle_message(self, raw_msg, user_email, username):
+        if str(raw_msg).lower() == "eightball":
+            return random.choice(self.data["predictions"])
         return False
 
-    def get_prediction(self, filename):
-        with open(filename, "r") as file:
-            predictions = file.read().splitlines()
-            prediction = predictions[random.randint(0, len(predictions) - 1)]
-            return prediction
-
     def help(self):
-        return "eightball - Get a prediction"
+        return "**eightball** - Get a prediction"

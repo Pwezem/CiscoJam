@@ -19,10 +19,10 @@ class Futurama(MessageHandler):
         self.quotes = quotes
         pass
 
-    def handle_message(self, raw_msg, user_email):
+    def handle_message(self, raw_msg, user_email, username):
         if raw_msg == "futurama":
             return random.choice(quotes)
         return False
 
     def help(self):
-        return "futurama - Responds with a futurama quote"
+        return "**futurama** - Responds with a futurama quote"

@@ -5,7 +5,7 @@ class Repeater(MessageHandler):
     def __init__(self):
         pass
 
-    def handle_message(self, raw_msg, user_email):
+    def handle_message(self, raw_msg, user_email, username):
         """
             Repeats the message based on the command,
             The raw_msg should remove the command before it replies.

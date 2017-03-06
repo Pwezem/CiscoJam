@@ -10,7 +10,7 @@ class Vote(MessageHandler):
         with open(self.path) as json_votes:
             self.data = json.load(json_votes)
 
-    def handle_message(self, raw_msg, user_email):
+    def handle_message(self, raw_msg, user_email, username):
 
         if "start_vote" in raw_msg.lower():
             # Starts a vote

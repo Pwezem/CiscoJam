@@ -6,7 +6,7 @@ class ShutDown(MessageHandler):
     def __init__(self):
         pass
 
-    def handle_message(self, raw_msg, user_email):
+    def handle_message(self, raw_msg, user_email, username):
         if raw_msg.lower() == "shutdown":
             if random.randint(0, 10) is not 2:
                 print "Powering down skynet"
