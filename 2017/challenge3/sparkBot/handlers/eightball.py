@@ -5,8 +5,8 @@ import random
 
 class Eightball(MessageHandler):
     
-    def __init__(self):
-        with open("handlers/data_files/eightball.json") as json_file:
+    def __init__(self, path_to_file="handlers/data_files/eightball.json"):
+        with open(path_to_file) as json_file:
             self.data = json.load(json_file)
         pass      
     

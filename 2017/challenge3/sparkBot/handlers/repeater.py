@@ -12,12 +12,13 @@ class Repeater(MessageHandler):
 
             all handle_message should return false if they can't be handled by this class.
         """
-        if "repeat_message" in raw_msg:
-            return "**All I do is repeat:** " + raw_msg.replace("repeat_message", "", 1)
-        if "repeat_backwards" in raw_msg:
-            return "**Repeating your message backwards:** " + raw_msg.replace("repeat_backwards", "", 1)[::-1]
+        if "repeat_message" in raw_msg.lower():
+            return "**All I do is repeat:** " + raw_msg[14::]
+        if "repeat_backwards" in raw_msg.lower():
+            #raw_msg.lower().replace("repeat_backwards", "", 1)
+            return "**Repeating your message backwards:** " + (raw_msg[::-1])[:-16].strip()
         return False
 
     def help(self):
-        return "repeat_message - Repeats whatever message is sent.<br>" \
-               "repeat_backwards - Repeats the message backwards."
+        return "**repeat_message** - Repeats whatever message is sent.<br>" \
+               "**repeat_backwards** - Repeats the message backwards."
