@@ -3,7 +3,7 @@ import importlib
 from spark2d2.bot import Bot
 
 handler_modules = ['repeater.Repeater', 'futurama.Futurama', 'eightball.Eightball', 'shutdown.ShutDown',
-                   'vote.Vote', 'meaningoflife.MeaningOfLife']
+                   'vote.Vote', 'meaningoflife.MeaningOfLife', 'numbers.Numbers']
 
 
 class botCore(Bot):
