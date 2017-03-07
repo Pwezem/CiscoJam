@@ -15,7 +15,6 @@ class Repeater(MessageHandler):
         if "repeat_message" in raw_msg.lower():
             return "**All I do is repeat:** " + raw_msg[14::]
         if "repeat_backwards" in raw_msg.lower():
-            #raw_msg.lower().replace("repeat_backwards", "", 1)
             return "**Repeating your message backwards:** " + (raw_msg[::-1])[:-16].strip()
         return False
 
