@@ -5,7 +5,6 @@ import json
 import random
 from operator import *
 
-#header = {'Authorization': general_info["authorization"]}
 class JeopradyTrivia(MessageHandler):
     def handle_message(self, raw_msg, user_email, username):
         if "jeopradyquestion" in str(raw_msg).lower():
