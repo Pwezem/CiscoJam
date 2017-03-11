@@ -47,7 +47,10 @@ class testNumbers(unittest.TestCase):
                                                username="Testa")
 
         expected_response = "**Numbers Game**<br>**Target:** %d<br>" \
-                            "**Numbers:** %d, %d, %d, %d, %d, %d"
+                            "**Numbers:** %d, %d, %d, %d, %d, %d" \
+                            % (self.numbers.target, self.numbers.numbers[0], self.numbers.numbers[1],
+                               self.numbers.numbers[2], self.numbers.numbers[3], self.numbers.numbers[4],
+                               self.numbers.numbers[5])
 
         self.assertEqual(response, expected_response,
                          "ERROR, response \"%s\" did not match expected \"%s\"."
@@ -64,7 +67,7 @@ class testNumbers(unittest.TestCase):
         response = self.numbers.handle_message("{}".format("numbers s:0 l:7"), "test_email@email.mail",
                                                username="Testa")
 
-        expected_response = "**Cancelling numbers game**<br>Large number is too big 7"
+        expected_response = "**Cancelling numbers game**<br>Large number is too big 7."
 
         self.assertEqual(response, expected_response,
                          "ERROR, response \"%s\" did not match expected \"%s\"."
@@ -81,7 +84,7 @@ class testNumbers(unittest.TestCase):
         response = self.numbers.handle_message("{}".format("numbers s:7 l:0"), "test_email@email.mail",
                                                username="Testa")
 
-        expected_response = "**Cancelling numbers game**<br>Small number is too big 7"
+        expected_response = "**Cancelling numbers game**<br>Small number is too big 7."
 
         self.assertEqual(response, expected_response,
                          "ERROR, response \"%s\" did not match expected \"%s\"."
@@ -95,7 +98,7 @@ class testNumbers(unittest.TestCase):
 
     def tearDown(self):
         super(testNumbers, self).tearDownClass()
-        self.futurama = None
+        self.numbers = None
 
 if __name__ == '__main__':
     unittest.main()

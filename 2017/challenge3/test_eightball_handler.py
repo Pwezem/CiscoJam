@@ -18,7 +18,7 @@ class testEightball(unittest.TestCase):
 
     def setUp(self):
         super(testEightball, self).setUp()
-        self.eightball = Eightball("sparkBot/lhandlers/data_files/eightball.json")
+        self.eightball = Eightball("sparkBot/handlers/data_files/eightball.json")
 
     def test_100_futurama_quote(self):
         """

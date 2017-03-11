@@ -10,6 +10,7 @@ class Numbers(MessageHandler):
         self.large_nums = [25, 50, 75, 100]
         self.small_nums = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10]
         self.numbers = list()
+        self.target = 0
 
     def handle_message(self, raw_msg, user_email, username):
         if "numbers solve" in str(raw_msg).lower():
