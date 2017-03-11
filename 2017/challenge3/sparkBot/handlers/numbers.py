@@ -6,9 +6,7 @@ from operator import *
 
 
 class Numbers(MessageHandler):
-    def __init__(self, path_to_file="handlers/data_files/eightball.json"):
-        with open(path_to_file) as json_file:
-            self.data = json.load(json_file)
+    def __init__(self):
         self.large_nums = [25, 50, 75, 100]
         self.small_nums = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10]
         self.numbers = list()
@@ -57,6 +55,10 @@ class Numbers(MessageHandler):
 
     def solve_numbers_game(self, N, T):
         return "not implemented yet"
+
+    def write_to_json_for_test(self):
+        with open("handlers/data_files/numbers.json") as json_file:
+            pass
 
     def get_three_digit_num(self):
         return random.randint(100, 999)
