@@ -27,7 +27,7 @@ class testRepeater(unittest.TestCase):
         self.utils.banner("Starting Test 100 repeater_message command.")
 
         expected = "**All I do is repeat:**  Get Rekt."
-        response = self.repeater.handle_message("repeat_message Get Rekt.", "test_email@email.mail",
+        response = self.repeater.handle_message("repeat message Get Rekt.", "test_email@email.mail",
                                                 username="Testa")
 
         self.assertEqual(response, expected,
@@ -43,7 +43,7 @@ class testRepeater(unittest.TestCase):
         self.utils.banner("Starting Test 101 repeater_message camelcase command.")
 
         expected = "**All I do is repeat:**  Get Rekt"
-        response = self.repeater.handle_message("RePeAt_MeSsAgE Get Rekt", "test_email@email.mail",
+        response = self.repeater.handle_message("RePeAt MeSsAgE Get Rekt", "test_email@email.mail",
                                                 username="Testa")
 
         self.assertEqual(response, expected,
@@ -59,7 +59,7 @@ class testRepeater(unittest.TestCase):
         self.utils.banner("Starting Test 100 repeater_message command.")
 
         expected = "**Repeating your message backwards:** tkeR teG"
-        response = self.repeater.handle_message("repeat_backwards Get Rekt", "test_email@email.mail",
+        response = self.repeater.handle_message("repeat backwards Get Rekt", "test_email@email.mail",
                                                 username="Testa")
 
         self.assertEqual(response, expected,
@@ -75,7 +75,7 @@ class testRepeater(unittest.TestCase):
         self.utils.banner("Starting Test 100 repeater_backwards camelcase command.")
 
         expected = "**Repeating your message backwards:** tkeR teG"
-        response = self.repeater.handle_message("RePeAt_BackwarDS Get Rekt", "test_email@email.mail",
+        response = self.repeater.handle_message("RePeAt BackwarDS Get Rekt", "test_email@email.mail",
                                                 username="Testa")
 
         self.assertEqual(response, expected,
