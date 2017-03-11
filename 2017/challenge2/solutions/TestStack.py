@@ -4,6 +4,7 @@ from CiscoJamStack import CiscoJamStack as jam_stack
 
 
 class TestStack(unittest.TestCase):
+    score = 0
 
     @classmethod
     def setUpClass(cls):
@@ -31,6 +32,8 @@ class TestStack(unittest.TestCase):
         '''
         assert self.jam_stack.isEmpty()
 
+        self.__class__.score += 5
+
     def test_102_check_stack_not_empty(self):
         '''
             Finish the assert to check if the
@@ -40,6 +43,8 @@ class TestStack(unittest.TestCase):
             self.jam_stack.push("item {}".format(i))
 
         assert not self.jam_stack.isEmpty()
+
+        self.__class__.score += 5
 
     def test_103_check_adding_two_items(self):
         '''
@@ -55,6 +60,8 @@ class TestStack(unittest.TestCase):
 
         assert self.jam_stack.size() == 2
 
+        self.__class__.score += 5
+
     def test_104_peek_at_top_element(self):
         '''
             Finish the test by adding item_one and
@@ -68,6 +75,8 @@ class TestStack(unittest.TestCase):
         self.jam_stack.push(item_two)
 
         assert item_two is self.jam_stack.peek()
+
+        self.__class__.score += 5
 
     def test_105_check_pop_items(self):
         '''
@@ -91,6 +100,8 @@ class TestStack(unittest.TestCase):
 
         assert self.jam_stack.isEmpty()
 
+        self.__class__.score += 5
+
     def test_106_check_peek(self):
         '''
             Finish the asset to check if peek
@@ -100,6 +111,8 @@ class TestStack(unittest.TestCase):
             self.jam_stack.push("item {}".format(i))
 
         assert self.jam_stack.peek() == "item 5"
+
+        self.__class__.score += 10
 
     def test_107_check_max_size(self):
         for i in range(1, self.jam_stack.get_max_size() + 1):
@@ -111,9 +124,14 @@ class TestStack(unittest.TestCase):
 
         assert self.jam_stack.size() == self.jam_stack.get_max_size()
 
+        self.__class__.score += 10
+
     @classmethod
     def tearDownClass(cls):
         super(TestStack, cls).tearDownClass()
+        print "\n\n*******************************"
+        print "Score for tests \"%d/45\"" % cls.score
+        print "*******************************"
 
     def tearDown(self):
         super(TestStack, self).tearDown()
