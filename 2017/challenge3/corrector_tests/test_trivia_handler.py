@@ -10,6 +10,7 @@ class testJeoprady(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         super(testJeoprady, cls).setUpClass()
+        log.getLogger("testTrivia")
         cls.utils = Utils()
 
     def test_100_trivia_question_returned(self):
