@@ -10,11 +10,7 @@ class testNumbers(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         super(testNumbers, cls).setUpClass()
-        log.getLogger("testFuturama")
-        with open("test_logs/futurama_test.log", 'w') as test_file:
-            test_file.truncate()
-        log.basicConfig(filename='test_logs/futurama_test.log', level=log.DEBUG,
-                        format='[%(asctime)s]:%(levelname)s: %(message)s')
+        log.getLogger("testNumbers")
         cls.utils = Utils()
 
     def setUp(self):
