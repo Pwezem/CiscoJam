@@ -23,3 +23,6 @@ class Utils(object):
         log.info("*" * (count + 6))
         log.info("** %s **" % msg)
         log.info(("*" * (count + 6)) + "\n")
+
+    def log(self, msg):
+        log.info(msg)
