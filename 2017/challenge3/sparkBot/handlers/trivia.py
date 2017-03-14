@@ -7,9 +7,9 @@ from operator import *
 
 class Trivia(MessageHandler):
     def handle_message(self, raw_msg, user_email, username):
-        if "jeopradyquestion" in str(raw_msg).lower():
+        if "triviaquestion" in str(raw_msg).lower():
             return self.get_trivia_question()
-        if "jeopradyanswer" in str(raw_msg).lower():
+        if "triviaanswer" in str(raw_msg).lower():
             return self.get_trivia_answer()
         return False
 
@@ -27,22 +27,20 @@ class Trivia(MessageHandler):
         response_answer =   {'text': '>*Answer: %s*' % (answer)}
         self.store_trivia_answer(response_answer)
 
-        return response_question['text']
+        return str(response_question['text'])
 
     def get_trivia_answer(self):
         answer = ''
-        if not os.path.isfile('handlers/data_files/trivia_answer.json'):
+        if not os.path.isfile('sparkBot/handlers/data_files/trivia_answer.json'):
             return 'No Question'
 
-        with open('handlers/data_files/trivia_answer.json') as json_file:
+        with open('sparkBot/handlers/data_files/trivia_answer.json') as json_file:
             answer = json.load(json_file)
 
-        os.remove('handlers/data_files/trivia_answer.json')
-        print answer
-        print answer['text']
-        return answer['text']
+        os.remove('sparkBot/handlers/data_files/trivia_answer.json')
+        return str(answer['text'])
 
     def store_trivia_answer(self, response_answer):
-        with open('handlers/data_files/trivia_answer.json', 'w') as json_file:
+        with open('sparkBot/handlers/data_files/trivia_answer.json', 'w') as json_file:
             json.dump(response_answer, json_file)
 

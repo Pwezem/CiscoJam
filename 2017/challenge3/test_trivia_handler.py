@@ -1,81 +1,84 @@
 import unittest
-#import logging as log
-import os.path
-#from utils.logging_utils import Utils
+import logging as log
+import os
+import json
+from utils.logging_utils import Utils
 from sparkBot.handlers.trivia import Trivia
 
-class testJeoprady(unittest.TestCase):
-    score = 0
-
+class testTrivia(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        super(testJeoprady, cls).setUpClass()
+        super(testTrivia, cls).setUpClass()
         cls.utils = Utils()
+
+    def setUp(self):
+        super(testTrivia, self).setUp()
+        self.trivia = Trivia()
+
+    def tearDown(self):
+        if os.path.isfile('sparkBot/handlers/data_files/trivia_answer.json'):
+            os.remove('sparkBot/handlers/data_files/trivia_answer.json')
 
     def test_100_trivia_question_returned(self):
         """
             Simple test to check if Trivia works and returns a question json blob.
         """
-        print("Starting Test 100 trivia question returned")
+        self.utils.log("Starting Test 100 trivia question returned")
 
-        response = self.numbers.handle_message('triviaquestion')
+        response = self.trivia.handle_message('triviaquestion', "test_email@email.mail",                                                username="Testa")
 
         expected_response = {'text': 'This is a sample question'}
 
         self.assertIsNotNone(response, "ERROR, returned question is none.")
 
-        self.assertEqual(type(response), type(expected_response),
-                         "ERROR, received incorrect response data type. Expected %s, received %s"
-                         % (type(response), type(expected_response)))
+        self.assertEqual(type(response), type(expected_response['text']),
+                         "ERROR, received incorrect response data type. Received %s, Expected %s"
+                         % (type(response), type(expected_response['text'])))
 
-        print("Finished Test 100")
+        self.utils.log("Finished Test 100")
 
     def test_101_trivia_answer_returned(self):
         """
-            Simple test to check if Trivia works and returns an appropriate answer,
-            and that a file to store the answer is generated
+            Simple test to check if Trivia works and returns an appropriate answer type
         """
-        print("Starting Test 101 trivia answer returned")
+        self.utils.log("Starting Test 101 trivia answer returned")
         
         expected_response = {'text': 'This is a sample answer'}
+        
+        self.trivia.handle_message('triviaquestion', 'test_email@email.mail',
+                                   username='Testa')
 
-        # Generate answer file to test with
-        with open('handlers/data_files/trivia_answer.json') as json_file:
-            answer = json.load(expected_response)
+        response = self.trivia.handle_message('triviaanswer', "test_email@email.mail",                                                                   username="Testa")
 
-        response = self.numbers.handle_message('triviaanswer')
+        self.assertEqual(type(response), type(expected_response['text']),
+                         "ERROR, received unexpected response. Received %s, Expected %s"
+                         % (type(response), type(expected_response['text'])))
 
+        self.assertNotEqual(str(response), 'No Question',
+                         'ERROR, could not find answer - no question file found')
 
-        self.assertEqual(type(response), type(expected_response),
-                         "ERROR, received incorrect response data type. Expected %s, received %s"
-                         % (type(response), type(expected_response)))
-
-        self.assertEqual(response, expected_response, "ERROR. Expected answer does not match response")
-
-        self.assertNotEqual(response, 'No Question',
-                         "ERROR, could not find answer - no question file found"
-                         % (response, expected_response))
-
-        print("Finished Test 101")
+        self.utils.log("Finished Test 101")
 
     def test_102_trivia_answer_file_deleted_after_answer_given(self):
         """
             Simple test to check check if the Trivia answer file is deleted once the answer is given
         """
-        print("Starting Test 102 trivia answer file deleted after answer given")
+        self.utils.log("Starting Test 102 trivia answer file deleted after answer given")
+        
+        expected_response = {'text': 'This is a sample answer'}
 
         # Generate answer file to test with
-        with open('handlers/data_files/trivia_answer.json') as json_file:
-            answer = json.load(expected_response)
+        with open('sparkBot/handlers/data_files/trivia_answer.json', 'w') as json_file:
+            json.dump(expected_response, json_file)
 
-        self.numbers.handle_message(self.numbers.handle_message('triviaanswer'))
+        self.trivia.handle_message('triviaanswer', "test_email@email.mail",                                                username="Testa")
 
-        does_file_exist = os.path.isfile('handlers/data_files/trivia_answer.json')
+        does_file_exist = os.path.isfile('sparkBot/handlers/data_files/trivia_answer.json')
 
         self.assertEqual(does_file_exist, False,
                          "ERROR, answer file was not deleted after the answer was given")
 
-        print("Finished Test 102")
+        self.utils.log("Finished Test 102")
 
 if __name__ == '__main__':
     unittest.main()
