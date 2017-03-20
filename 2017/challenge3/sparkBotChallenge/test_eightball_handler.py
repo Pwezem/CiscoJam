@@ -22,11 +22,11 @@ class testEightball(unittest.TestCase):
         super(testEightball, self).setUp()
         self.eightball = Eightball("sparkBot/handlers/data_files/eightball.json")
 
-    def test_100_futurama_quote(self):
+    def test_100_eightball_prediction(self):
         """
-            Simple test to check futurama works and returns a quote.
+            Simple test to check eightball works and returns a prediction.
         """
-        self.utils.banner("Starting Test 100 futurama command")
+        self.utils.banner("Starting Test 100 eightball command")
 
         response = self.eightball.handle_message("{}".format("eightball"),
                                                  "test_email@email.mail",
