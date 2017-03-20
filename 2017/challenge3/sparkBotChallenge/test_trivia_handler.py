@@ -1,9 +1,11 @@
-import unittest
-import logging as log
-import os
 import json
-from utils.logging_utils import Utils
+import os
+import unittest
+
 from sparkBot.handlers.trivia import Trivia
+
+from utils.logging_utils import Utils
+
 
 class testTrivia(unittest.TestCase):
     @classmethod

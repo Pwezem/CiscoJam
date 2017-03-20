@@ -1,7 +1,9 @@
-import unittest
 import logging as log
-from utils.logging_utils import Utils
+import unittest
+
 from sparkBot.handlers.repeater import Repeater
+
+from utils.logging_utils import Utils
 
 
 class testRepeater(unittest.TestCase):

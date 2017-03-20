@@ -1,7 +1,8 @@
-import unittest
 import logging as log
-from utils.logging_utils import Utils
+import unittest
+
 from sparkBot.handlers.eightball import Eightball
+from utils.logging_utils import Utils
 
 
 class testEightball(unittest.TestCase):
@@ -30,12 +31,13 @@ class testEightball(unittest.TestCase):
         response = self.eightball.handle_message("{}".format("eightball"),
                                                  "test_email@email.mail",
                                                  username="Testa")
+        self.__class__.score += 5
 
         self.assertTrue(response in self.eightball.data["predictions"],
                         "ERROR, response \"%s\" was not in the list of predictions."
                         % response)
 
-        self.__class__.score += 15
+        self.__class__.score += 10
         self.utils.end_banner("Finished Test 100")
 
     @classmethod

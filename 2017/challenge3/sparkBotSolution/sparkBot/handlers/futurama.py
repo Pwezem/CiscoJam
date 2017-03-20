@@ -17,7 +17,6 @@ quotes = ["Bite my shiny metal ass!", "Shut up baby, I know it!",
 class Futurama(MessageHandler):
     def __init__(self):
         self.quotes = quotes
-        pass
 
     def handle_message(self, raw_msg, user_email, username):
         if raw_msg == "futurama":

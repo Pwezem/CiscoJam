@@ -1,10 +1,12 @@
-import unittest
 import logging as log
-from utils.logging_utils import Utils
+import unittest
+
 from sparkBot.handlers.futurama import Futurama
+from utils.logging_utils import Utils
 
 
 class testFuturama(unittest.TestCase):
+    score = 0
 
     @classmethod
     def setUpClass(cls):
@@ -29,15 +31,20 @@ class testFuturama(unittest.TestCase):
         response = self.futurama.handle_message("{}".format("futurama"), "test_email@email.mail",
                                                 username="Testa")
 
+        self.__class__.score += 5
         self.assertTrue(response in self.futurama.quotes,
                         "ERROR, response \"%s\" was not in the list of quotes."
                         % response)
 
+        self.__class__.score += 5
         self.utils.end_banner("Finished Test 100")
 
     @classmethod
     def tearDownClass(cls):
         super(testFuturama, cls).tearDownClass()
+        print "\n\n*******************************"
+        print "Score for tests \"%d/10\"" % cls.score
+        print "*******************************"
 
     def tearDown(self):
         super(testFuturama, self).tearDownClass()

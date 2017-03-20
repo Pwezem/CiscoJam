@@ -1,16 +1,21 @@
-import unittest
 import logging as log
-from utils.logging_utils import Utils
+import unittest
+
 from sparkBot.handlers.numbers import Numbers
+
+from utils.logging_utils import Utils
 
 
 class testNumbers(unittest.TestCase):
-    score = 0
 
     @classmethod
     def setUpClass(cls):
         super(testNumbers, cls).setUpClass()
-        log.getLogger("testNumbers")
+        log.getLogger("testFuturama")
+        with open("test_logs/futurama_test.log", 'w') as test_file:
+            test_file.truncate()
+        log.basicConfig(filename='test_logs/futurama_test.log', level=log.DEBUG,
+                        format='[%(asctime)s]:%(levelname)s: %(message)s')
         cls.utils = Utils()
 
     def setUp(self):
@@ -32,7 +37,6 @@ class testNumbers(unittest.TestCase):
                          "ERROR, response \"%s\" did not match expected \"%s\"."
                          % (response, expected_response))
 
-        self.__class__.score += 5
         self.utils.end_banner("Finished Test 100")
 
     def test_101_numbers_with_options(self):
@@ -54,7 +58,6 @@ class testNumbers(unittest.TestCase):
                          "ERROR, response \"%s\" did not match expected \"%s\"."
                          % (response, expected_response))
 
-        self.__class__.score += 5
         self.utils.end_banner("Finished Test 101")
 
     def test_102_numbers_with_large_option_too_high(self):
@@ -72,7 +75,6 @@ class testNumbers(unittest.TestCase):
                          "ERROR, response \"%s\" did not match expected \"%s\"."
                          % (response, expected_response))
 
-        self.__class__.score += 5
         self.utils.end_banner("Finished Test 102")
 
     def test_103_numbers_with_small_option_too_high(self):
@@ -90,15 +92,11 @@ class testNumbers(unittest.TestCase):
                          "ERROR, response \"%s\" did not match expected \"%s\"."
                          % (response, expected_response))
 
-        self.__class__.score += 5
         self.utils.end_banner("Finished Test 103")
 
     @classmethod
     def tearDownClass(cls):
         super(testNumbers, cls).tearDownClass()
-        print "\n\n*******************************"
-        print "Score for tests \"%d/20\"" % cls.score
-        print "*******************************"
 
     def tearDown(self):
         super(testNumbers, self).tearDownClass()

@@ -1,7 +1,9 @@
-import unittest
 import logging as log
-from utils.logging_utils import Utils
+import unittest
+
 from sparkBot.handlers.eightball import Eightball
+
+from utils.logging_utils import Utils
 
 
 class testEightball(unittest.TestCase):

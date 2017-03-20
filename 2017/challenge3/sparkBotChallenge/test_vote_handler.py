@@ -1,8 +1,10 @@
-import unittest
 import json
 import logging as log
-from utils.logging_utils import Utils
+import unittest
+
 from sparkBot.handlers.vote import Vote
+
+from utils.logging_utils import Utils
 
 path = "testing_files/votes_test.json"
 

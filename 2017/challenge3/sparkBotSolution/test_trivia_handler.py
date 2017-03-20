@@ -1,8 +1,9 @@
-import unittest
 import logging as log
 import os.path
+import unittest
+
 from utils.logging_utils import Utils
-from sparkBot.handlers.trivia import Trivia
+
 
 class testJeoprady(unittest.TestCase):
     score = 0
