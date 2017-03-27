@@ -27,7 +27,8 @@ class testTrivia(unittest.TestCase):
         """
         self.utils.log("Starting Test 100 trivia question returned")
 
-        response = self.trivia.handle_message('triviaquestion', "test_email@email.mail",                                                username="Testa")
+        response = self.trivia.handle_message('trivia_question', "test_email@email.mail",
+                                              username="Testa")
 
         expected_response = {'text': 'This is a sample question'}
 
@@ -47,17 +48,18 @@ class testTrivia(unittest.TestCase):
         
         expected_response = {'text': 'This is a sample answer'}
         
-        self.trivia.handle_message('triviaquestion', 'test_email@email.mail',
+        self.trivia.handle_message('trivia_question', 'test_email@email.mail',
                                    username='Testa')
 
-        response = self.trivia.handle_message('triviaanswer', "test_email@email.mail",                                                                   username="Testa")
+        response = self.trivia.handle_message('trivia_answer', "test_email@email.mail",
+                                              username="Testa")
 
         self.assertEqual(type(response), type(expected_response['text']),
                          "ERROR, received unexpected response. Received %s, Expected %s"
                          % (type(response), type(expected_response['text'])))
 
         self.assertNotEqual(str(response), 'No Question',
-                         'ERROR, could not find answer - no question file found')
+                            'ERROR, could not find answer - no question file found')
 
         self.utils.log("Finished Test 101")
 
@@ -73,7 +75,7 @@ class testTrivia(unittest.TestCase):
         with open('sparkBot/handlers/data_files/trivia_answer.json', 'w') as json_file:
             json.dump(expected_response, json_file)
 
-        self.trivia.handle_message('triviaanswer', "test_email@email.mail",                                                username="Testa")
+        self.trivia.handle_message('trivia_answer', "test_email@email.mail",                                                username="Testa")
 
         does_file_exist = os.path.isfile('sparkBot/handlers/data_files/trivia_answer.json')
 

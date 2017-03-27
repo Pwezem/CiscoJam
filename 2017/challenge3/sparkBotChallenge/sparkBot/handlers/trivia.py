@@ -16,7 +16,22 @@ class Trivia(MessageHandler):
     def help(self):
         return "**JeopradyTrivia** - Returns a randomly pulled jeoprady question"
 
-    def get_trivia_question(self):
+    def get_trivia_question(self, path_to_file="data_files/trivia_answer.json"):
+        """
+            This method should make a request to "http://jservice.io/api/random"
+            for a random trivia question.
+            The question comes with an answer, the anser needs to be stored in
+            the json file above "path_to_file".
+
+
+            HINT: remove "pass", it's a keyword that is not needed.
+            HINT: request comes back as json.
+            HINT: test_trivia_handler.py will assist you in this challenge, look at the "expected_response"
+            strings.
+            HINT: there is also a fully functional bot that you can use to see how the game works.
+
+            :return: a trivia question.
+        """
         r = requests.get('http://jservice.io/api/random')
         j = json.loads(r.text)
         category = str(j[0]['category']['title'])
@@ -24,23 +39,23 @@ class Trivia(MessageHandler):
         answer = str(j[0]['answer'])
 
         response_question = {'text': '>*Category: %s*\n\n>*Question: %s*' % (category, question)}
-        response_answer =   {'text': '>*Answer: %s*' % (answer)}
-        self.store_trivia_answer(response_answer)
+        response_answer = {'text': '>*Answer: %s*' % answer}
+        self.store_trivia_answer(response_answer, path_to_file)
 
         return str(response_question['text'])
 
-    def get_trivia_answer(self):
+    def get_trivia_answer(self, path_to_file="data_files/trivia_answer.json"):
         answer = ''
-        if not os.path.isfile('sparkBot/handlers/data_files/trivia_answer.json'):
-            return 'No Question'
+        if not os.path.isfile(path_to_file):
+            return '**No Question**<br>Use \"trivia_question\" to get a new question.'
 
-        with open('sparkBot/handlers/data_files/trivia_answer.json') as json_file:
+        with open(path_to_file) as json_file:
             answer = json.load(json_file)
 
-        os.remove('sparkBot/handlers/data_files/trivia_answer.json')
+        os.remove(path_to_file)
         return str(answer['text'])
 
-    def store_trivia_answer(self, response_answer):
-        with open('sparkBot/handlers/data_files/trivia_answer.json', 'w') as json_file:
+    def store_trivia_answer(self, response_answer, path_to_file):
+        with open(path_to_file, 'w') as json_file:
             json.dump(response_answer, json_file)
 
