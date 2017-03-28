@@ -93,7 +93,6 @@ class testRepeater(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         super(testRepeater, cls).tearDownClass()
-        super(testEightball, cls).tearDownClass()
         print "\n\n*******************************"
         print "Score for tests \"%d/25\"" % cls.score
         print "*******************************"

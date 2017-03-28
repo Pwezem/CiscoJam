@@ -358,7 +358,6 @@ class testVote(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         super(testVote, cls).tearDownClass()
-        super(testEightball, cls).tearDownClass()
         print "\n\n*******************************"
         print "Score for tests \"%d/70\"" % cls.score
         print "*******************************"
