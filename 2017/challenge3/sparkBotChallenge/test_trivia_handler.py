@@ -75,7 +75,7 @@ class testTrivia(unittest.TestCase):
         with open('sparkBot/handlers/data_files/trivia_answer.json', 'w') as json_file:
             json.dump(expected_response, json_file)
 
-        self.trivia.handle_message('trivia_answer', "test_email@email.mail",                                                username="Testa")
+        self.trivia.handle_message('trivia_answer', "test_email@email.mail", username="Testa")
 
         does_file_exist = os.path.isfile('sparkBot/handlers/data_files/trivia_answer.json')
 

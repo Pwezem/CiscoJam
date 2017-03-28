@@ -20,14 +20,16 @@ class Trivia(MessageHandler):
         """
             This method should make a request to "http://jservice.io/api/random"
             for a random trivia question.
-            The question comes with an answer, the anser needs to be stored in
-            the json file above "path_to_file".
+            The request comes back wit a json object, within the object is a
+            question, a title and an answer, the anwser needs to be stored in a
+            seperate json file located at above "path_to_file".
 
 
             HINT: remove "pass", it's a keyword that is not needed.
             HINT: request comes back as json.
             HINT: test_trivia_handler.py will assist you in this challenge, look at the "expected_response"
             strings.
+            HINT: It may be necessary to cast objects.
             HINT: there is also a fully functional bot that you can use to see how the game works.
 
             :return: a trivia question.
