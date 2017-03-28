@@ -10,7 +10,10 @@ print "Booting skynet."
 
 def remove_mention(msg):
     if msg.find(config["bot_name"]) > -1:
-        return msg.split(' ', 1)[1]
+        try:
+            return msg.split(' ', 1)[1]
+        except IndexError:
+            return "No Command"
     else:
         return msg
 
