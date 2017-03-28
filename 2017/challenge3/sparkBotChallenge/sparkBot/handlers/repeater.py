@@ -1,5 +1,9 @@
 from handler_base import MessageHandler
-
+"""
+    This is an example class for you to understand how the handlers work.
+    Each new handler must extend MessageHandler class, override the handle_message
+    and the help message.
+"""
 
 class Repeater(MessageHandler):
     def __init__(self):

@@ -1,4 +1,4 @@
 *.pyc
 .idea/*
 *_test.log
-2017/challenge3/sparkBotChallenge/sparkBot/config.json
+*config.json

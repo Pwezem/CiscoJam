@@ -40,6 +40,21 @@ class Vote(MessageHandler):
             json.dump(self.data, output)
 
     def start_vote(self, options):
+        """
+            This method should start a vote, if a vote is not already in progress.
+            If the user passes voting options use those.
+            if the user passes 0 voting options use the default yes or no.
+            If the user passes 1 voting option, cancel the vote.
+            Write the options to a json file.
+
+            HINT: remove "pass", it's a keyword that is not needed.
+            HINT: test_vote_handler.py will assist you in this challenge, look at the "expected_response"
+            strings.
+            HINT: there is also a fully functional bot that you can use to see how the game works.
+
+            :return: a vote with options.
+            :param options: the voting options
+        """
         response = "**Starting Vote, options:**<br>"
 
         # Check there is no vote in progress

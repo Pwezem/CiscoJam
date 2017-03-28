@@ -37,27 +37,25 @@ class Trivia(MessageHandler):
 
             :return: a trivia question.
         """
-        r = requests.get('http://jservice.io/api/random')
-        j = json.loads(r.text)
-        category = str(j[0]["category"]["title"])
-        question = str(j[0]["question"])
-        answer = str(j[0]["answer"])
-
-        response_question = {"text": ">*Category: %s*<br><br>>*Question: %s*" % (category, question)}
-        response_answer = {"text": ">*Answer: %s*" % answer}
-        self.store_trivia_answer(response_answer)
-
-        return str(response_question['text'])
 
     def get_trivia_answer(self):
-        if not os.path.isfile(self.answer_file):
-            return "**No Question**<br>Use \"trivia question\" to get a new question."
+        """
+            This method should return the answer to the last question asked.
+            If no answer exists a question wasn't asked and therefore
+            this should be returned "**No Question**<br>Use \"trivia question\" to get a new question."
 
-        with open(self.answer_file) as json_file:
-            answer = json.load(json_file)
 
-        os.remove(self.answer_file)
-        return str(answer["text"])
+            HINT: remove "pass", it's a keyword that is not needed.
+            HINT: check json file exists.
+            HINT: Return the answer if it's there.
+            HINT: test_trivia_handler.py will assist you in this challenge, look at the "expected_response"
+            strings.
+            HINT: It may be necessary to cast objects.
+            HINT: there is also a fully functional bot that you can use to see how the game works.
+
+            :return: a trivia answer or a string with no question.
+        """
+        pass
 
     def store_trivia_answer(self, response_answer):
         with open(self.answer_file, 'w') as json_file:

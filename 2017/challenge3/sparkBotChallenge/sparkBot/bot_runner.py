@@ -10,7 +10,10 @@ print "Booting skynet."
 
 def remove_mention(msg):
     if msg.find(config["bot_name"]) > -1:
-        return msg.split(' ', 1)[1]
+        try:
+            return msg.split(' ', 1)[1]
+        except IndexError:
+            return "No Command"
     else:
         return msg
 
@@ -28,7 +31,7 @@ def run():
         responses = bot.process_message(raw_msg, user_email=activity.actor.emailAddress, username=name)
         count = 0
         for value in responses:
-            if value is not False and bot.response_string == " ":
+            if value is not False and bot.response_string == " " and value is not None:
                 bot.response_string = str(value)
             elif value is not False:
                 bot.response_string += "<br>" + str(value)

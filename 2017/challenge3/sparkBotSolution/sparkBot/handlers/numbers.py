@@ -1,7 +1,5 @@
 from handler_base import MessageHandler
-import json
 import random
-from operator import *
 
 
 
@@ -43,8 +41,11 @@ class Numbers(MessageHandler):
         if small > 6:
             return response + "Small number is too big %d." % small
         if (small+large) > 6:
-            return response + "Combined numbers can't be greater then six<br>" \
+            return response + "Combined numbers can't be greater than six<br>" \
                               "s:%d + l:%d > 6" % (small, large)
+        if (small+large) < 6:
+            return response + "Combined numbers were less than six<br>" \
+                              "s:%d + l:%d < 6" % (small, large)
         self.pick_random_x(small, self.small_nums)
         self.pick_random_x(large, self.large_nums)
 
@@ -56,10 +57,6 @@ class Numbers(MessageHandler):
 
     def solve_numbers_game(self, N, T):
         return "not implemented yet"
-
-    def write_to_json_for_test(self):
-        with open("handlers/data_files/numbers.json") as json_file:
-            pass
 
     def get_three_digit_num(self):
         return random.randint(100, 999)

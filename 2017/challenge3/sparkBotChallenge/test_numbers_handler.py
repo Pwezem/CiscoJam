@@ -39,11 +39,11 @@ class testNumbers(unittest.TestCase):
 
         self.utils.end_banner("Finished Test 100")
 
-    def test_101_numbers_with_options(self):
+    def test_101_numbers_with_correct_options(self):
         """
             Simple test to check numbers works and returns a game.
         """
-        self.utils.banner("Starting Test 101 numbers command with options")
+        self.utils.banner("Starting Test 101 numbers command with correct options")
 
         response = self.numbers.handle_message("{}".format("numbers s:2 l:4"), "test_email@email.mail",
                                                username="Testa")
@@ -93,6 +93,42 @@ class testNumbers(unittest.TestCase):
                          % (response, expected_response))
 
         self.utils.end_banner("Finished Test 103")
+
+    def test_104_numbers_with_options_less_than_six(self):
+        """
+            Simple test to check numbers works and returns no game due to options less than six.
+        """
+        self.utils.banner("Starting Test 104 numbers command with options less then six.")
+
+        response = self.numbers.handle_message("{}".format("numbers s:4 l:1"), "test_email@email.mail",
+                                               username="Testa")
+
+        expected_response = "**Cancelling numbers game**<br>Combined numbers were less than six<br>" \
+                            "s:4 + l:1 < 6"
+
+        self.assertEqual(response, expected_response,
+                         "ERROR, response \"%s\" did not match expected \"%s\"."
+                         % (response, expected_response))
+
+        self.utils.end_banner("Finished Test 104")
+
+    def test_105_numbers_with_options_greater_than_six(self):
+        """
+            Simple test to check numbers works and returns no game due to options greater than six.
+        """
+        self.utils.banner("Starting Test 104 numbers command with options gerater then six.")
+
+        response = self.numbers.handle_message("{}".format("numbers s:5 l:2"), "test_email@email.mail",
+                                               username="Testa")
+
+        expected_response = "**Cancelling numbers game**<br>Combined numbers can't be greater than six<br>" \
+                            "s:5 + l:2 > 6"
+
+        self.assertEqual(response, expected_response,
+                         "ERROR, response \"%s\" did not match expected \"%s\"."
+                         % (response, expected_response))
+
+        self.utils.end_banner("Finished Test 105")
 
     @classmethod
     def tearDownClass(cls):

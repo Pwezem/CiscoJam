@@ -31,7 +31,7 @@ def run():
         responses = bot.process_message(raw_msg, user_email=activity.actor.emailAddress, username=name)
         count = 0
         for value in responses:
-            if value is not False and bot.response_string == " ":
+            if value is not False and bot.response_string == " " and value is not None:
                 bot.response_string = str(value)
             elif value is not False:
                 bot.response_string += "<br>" + str(value)

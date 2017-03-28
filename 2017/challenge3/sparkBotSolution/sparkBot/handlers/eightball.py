@@ -10,7 +10,7 @@ class Eightball(MessageHandler):
             self.data = json.load(json_file)
     
     def handle_message(self, raw_msg, user_email, username):
-        if str(raw_msg).lower() == "eightball":
+        if "eightball" in str(raw_msg).lower():
             return random.choice(self.data["predictions"])
         return False
 
