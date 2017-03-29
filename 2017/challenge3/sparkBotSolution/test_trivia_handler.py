@@ -1,5 +1,4 @@
 import logging as log
-import os.path
 import unittest
 import json
 import re
@@ -15,92 +14,130 @@ class testTrivia(unittest.TestCase):
     def setUpClass(cls):
         super(testTrivia, cls).setUpClass()
         log.getLogger("testTrivia")
+
+        # Regex expression, matches parts of your output exactly and the rest loosely.
         cls.question_pattern = ">\*Category: .*<br><br>>\*Question: .*\*"
-        with open("test_logs/eightball_test.log", 'w') as test_file:
+
+        with open("test_logs/trivia_test.log", 'w') as test_file:
             test_file.truncate()
         log.basicConfig(filename='test_logs/trivia_test.log', level=log.DEBUG,
                         format='[%(asctime)s]:%(levelname)s: %(message)s')
-        cls.path_to_file = "testing_files/trivia_test.json"
+
+        cls.path_to_file = "testing_files/trivia_test.json"  # test file location
+
+        cls.trivia = Trivia(path_to_file=cls.path_to_file)
+
         cls.utils = Utils()
+
+        with open(cls.path_to_file, 'w') as json_file:
+            json.dump({"text": ""}, json_file)
 
     def setUp(self):
         super(testTrivia, self).setUp()
-        self.trivia = Trivia(path_to_file=self.path_to_file)
 
     def test_100_trivia_question_returned(self):
         """
-            Simple test to check if Trivia works and returns a question json blob.
+            Simple test to check if Trivia works and returns a question string.
         """
-        log.info("Starting Test 100 trivia question returned")
+        log.info("Starting Test 100 trivia question command")
 
         response = self.trivia.handle_message('trivia question', user_email="test_email@email.mail",
                                               username="Testa")
 
         pattern = re.compile(self.question_pattern)
 
-        self.assertIsNotNone(response, "ERROR, returned question is none.")
-
         self.assertTrue(pattern.match(response),
                         "ERROR, received incorrect response data type. Response was %s,"
                         "expect to match pattern %s"
                         % (response, self.question_pattern))
 
+        self.__class__.score += 10
         log.info("Finished Test 100")
 
-    def test_101_trivia_answer_returned(self):
+    def test_101_trivia_question_fails_as_question_already_ask(self):
+        """
+            Test to check if Trivia works and returns a string asking the user
+            to call the answer command.
+        """
+        log.info("Starting Test 101 trivia question returns trivia answer command")
+
+        response = self.trivia.handle_message('trivia question', user_email="test_email@email.mail",
+                                              username="Testa")
+
+        expected_response = "**Trivia insession**<br>Please get the answer to the last question"
+
+        self.assertEqual(response, expected_response,
+                         "ERROR, received incorrect response from \"trivia question\""
+                         ". Response was: \"%s\", expect_response: \"%s\""
+                         % (response, expected_response))
+
+        self.__class__.score += 10
+        log.info("Finished Test 101")
+
+    def test_102_trivia_answer_returned(self):
         """
             Simple test to check if Trivia works and returns an appropriate answer,
-            and that a file to store the answer is generated
+            and that the answer is stored in the json file.
         """
-        log.info("Starting Test 101 trivia answer returned")
+        log.info("Starting Test 102 trivia answer command")
 
-        # Generate answer file to test with
         with open(self.path_to_file) as json_file:
-            expected_response = json.load(json_file)
+            data = json.load(json_file)
+            self.assertTrue(type(data) is dict,
+                            "ERROR, data stored in %s is not json data. Got type %s"
+                            % (self.path_to_file, type(data)))
+
+        expected_response = data["text"]
 
         response = self.trivia.handle_message('trivia answer', user_email="test_email@email.mail",
                                               username="Testa")
 
-
-        self.assertEqual(response, expected_response["text"],
+        self.assertEqual(response, expected_response,
                          "ERROR, received incorrect response data type. Expected %s, received %s"
                          % (response, expected_response))
 
-        # self.assertNotEqual(response, 'No Question',
-        #                  "ERROR, could not find answer - no question file found"
-        #                  % (response, expected_response))
-
+        self.__class__.score += 15
         log.info("Finished Test 101")
 
-    def _test_102_trivia_answer_file_deleted_after_answer_given(self):
+    def test_103_trivia_answer_command_fails_as_no_answer_available(self):
         """
-            Simple test to check check if the Trivia answer file is deleted once the answer is given
+            Simple test to check if the Trivia answer command called when no question
+            is asked returns a prompt to the user to call the "trivia question" command.
         """
-        log.info("Starting Test 102 trivia answer file deleted after answer given")
+        log.info("Starting Test 103 trivia answer with no question asked")
 
-        # Generate answer file to test with
-        with open('handlers/data_files/trivia_answer.json') as json_file:
-            expected_response = json.load(json_file)
+        with open(self.path_to_file) as json_file:
+            data = json.load(json_file)
+            self.assertTrue(type(data) is dict,
+                            "ERROR, data stored in %s is not json data. Got type %s"
+                            % (self.path_to_file, type(data)))
 
-        self.trivia.handle_message("trivia answer")
+        expected_data = {"text":""}
+        self.assertEqual(data, expected_data,
+                         "ERROR: expected response \"%s\" did not match actual \"%s\""
+                         % (expected_data, data))
 
-        does_file_exist = os.path.isfile('handlers/data_files/trivia_answer.json')
+        expected_response = "**No Question**<br>Use \"trivia question\" to get a new question."
+        response = self.trivia.handle_message("trivia answer", user_email="test_email@email.mail",
+                                              username="Testa")
 
-        self.assertEqual(does_file_exist, False,
-                         "ERROR, answer file was not deleted after the answer was given")
+        self.assertEqual(response, expected_response,
+                         "ERROR, response \"%s\" did not match expected response \"%s\""
+                         % (response, expected_response))
 
-        log.info("Finished Test 102")
+        self.__class__.score += 15
+        log.info("Finished Test 103")
 
     @classmethod
     def tearDownClass(cls):
         super(testTrivia, cls).tearDownClass()
+        cls.trivia = None
         print "\n\n*******************************"
-        print "Score for tests \"%d/25\"" % cls.score
+        print "Score for tests \"%d/50\"" % cls.score
         print "*******************************"
 
     def tearDown(self):
         super(testTrivia, self).tearDownClass()
-        self.futurama = None
 
 if __name__ == '__main__':
     unittest.main()

@@ -5,6 +5,7 @@ from handler_base import MessageHandler
     and the help message.
 """
 
+
 class Repeater(MessageHandler):
     def __init__(self):
         pass

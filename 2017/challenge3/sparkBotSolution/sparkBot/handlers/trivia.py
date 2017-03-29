@@ -8,6 +8,8 @@ class Trivia(MessageHandler):
     def __init__(self, path_to_file="handlers/data_files/trivia_answer.json"):
         # Store the path_to_file for later use.
         self.answer_file = path_to_file
+        with open(self.answer_file) as json_file:
+            self.answer = (json.load(json_file))["text"]
 
     def handle_message(self, raw_msg, user_email, username):
         if "trivia question" in str(raw_msg).lower():
@@ -20,27 +22,29 @@ class Trivia(MessageHandler):
         return "**Trivia** - Returns a randomly pulled jeoprady question"
 
     def get_trivia_question(self):
+        if self.answer:
+            return "**Trivia insession**<br>Please get the answer to the last question"
         r = requests.get('http://jservice.io/api/random')
         j = json.loads(r.text)
-        category = str(j[0]["category"]["title"])
-        question = str(j[0]["question"])
-        answer = str(j[0]["answer"])
+        category = j[0]["category"]["title"]
+        question = j[0]["question"]
+        self.answer = ">*Answer: %s*" % j[0]["answer"]
 
-        response_question = {"text": ">*Category: %s*<br><br>>*Question: %s*" % (category, question)}
-        response_answer = {"text": ">*Answer: %s*" % answer}
-        self.store_trivia_answer(response_answer)
+        response_question = ">*Category: %s*<br><br>>*Question: %s*" % (category, question)
+        self.store_trivia_answer({"text": self.answer})
 
-        return str(response_question['text'])
+        return response_question
 
     def get_trivia_answer(self):
-        if not os.path.isfile(self.answer_file):
+        if not self.answer:
             return "**No Question**<br>Use \"trivia question\" to get a new question."
 
-        with open(self.answer_file) as json_file:
-            answer = json.load(json_file)
+        ans = self.answer
+        self.answer = ""
 
-        os.remove(self.answer_file)
-        return str(answer["text"])
+        self.store_trivia_answer({"text": self.answer})
+
+        return ans
 
     def store_trivia_answer(self, response_answer):
         with open(self.answer_file, 'w') as json_file:

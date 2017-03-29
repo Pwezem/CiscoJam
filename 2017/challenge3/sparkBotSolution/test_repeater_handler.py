@@ -6,7 +6,6 @@ from utils.logging_utils import Utils
 
 
 class testRepeater(unittest.TestCase):
-    score = 0
 
     @classmethod
     def setUpClass(cls):
@@ -36,7 +35,6 @@ class testRepeater(unittest.TestCase):
                         "ERROR, response \"%s\" was not the same as actual %s."
                         % (expected, response))
 
-        self.__class__.score += 5
         self.utils.end_banner("Finished Test 100")
 
     def test_101_repeater_camel_case(self):
@@ -53,7 +51,6 @@ class testRepeater(unittest.TestCase):
                          "ERROR, response \"%s\" was not the same as actual %s."
                          % (expected, response))
 
-        self.__class__.score += 5
         self.utils.end_banner("Finished Test 101")
 
     def test_102_repeater_backwards(self):
@@ -70,7 +67,6 @@ class testRepeater(unittest.TestCase):
                          "ERROR, response \"%s\" was not the same as actual %s."
                          % (expected, response))
 
-        self.__class__.score += 5
         self.utils.end_banner("Finished Test 100")
 
     def test_104_repeater_backwards_camel_case(self):
@@ -87,15 +83,11 @@ class testRepeater(unittest.TestCase):
                          "ERROR, response \"%s\" was not the same as actual %s."
                          % (expected, response))
 
-        self.__class__.score += 5
         self.utils.end_banner("Finished Test 100")
 
     @classmethod
     def tearDownClass(cls):
         super(testRepeater, cls).tearDownClass()
-        print "\n\n*******************************"
-        print "Score for tests \"%d/25\"" % cls.score
-        print "*******************************"
 
     def tearDown(self):
         super(testRepeater, self).tearDownClass()
