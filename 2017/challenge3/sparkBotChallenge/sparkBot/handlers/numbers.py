@@ -37,7 +37,7 @@ class Numbers(MessageHandler):
             If all is correct, this method should,
             choose "s:" random numbers from the "self.small_nums" list
             and "l:" random numbers from the self.large_nums" list.
-            The numbers chosen fromthe lists can not be select more than then appear in the list,
+            The numbers chosen from the lists can not be select more than then appear in the list,
             i.e. in "self.small" you can't choose 1 three times as it only appears twice.
             i.e. in "self.large" you can't choose any number twice as they only appear once.
             It should also return a "Target" 3 digit number to be reached.
@@ -45,7 +45,7 @@ class Numbers(MessageHandler):
             HINT: remove "pass" it's not needed.
             HINT: a lot of string manipulation in this one.
             HINT: this is the countdown numbers game.
-            HINT: repeater.py will show you an example of how a "handle_message" works.
+            HINT: repeater.py will show you an example of how a the basic structure works.
             HINT: test_numbers_handler.py will assist you in this challenge, look at the "expected_response"
             strings for the fail strings to return.
             HINT: there is also a fully functional bot that you can use to see how the game works.

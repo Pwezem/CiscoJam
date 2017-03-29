@@ -24,12 +24,14 @@ class testTrivia(unittest.TestCase):
 
         cls.path_to_file = "testing_files/trivia_test.json"  # test file location
 
-        cls.trivia = Trivia(path_to_file=cls.path_to_file)
-
         cls.utils = Utils()
+
+        with open(cls.path_to_file, 'w') as json_file:
+            json.dump({"text": ""}, json_file)
 
     def setUp(self):
         super(testTrivia, self).setUp()
+        self.trivia = Trivia(path_to_file=self.path_to_file)
 
     def test_100_trivia_question_returned(self):
         """
@@ -76,10 +78,12 @@ class testTrivia(unittest.TestCase):
         log.info("Starting Test 102 trivia answer command")
 
         with open(self.path_to_file) as json_file:
-            self.assertTrue(type(json_file) is dict,
+            data = json.load(json_file)
+            self.assertTrue(type(data) is dict,
                             "ERROR, data stored in %s is not json data. Got type %s"
                             % (self.path_to_file, type(data)))
-            expected_response = json.load(json_file)
+
+        expected_response = data["text"]
 
         response = self.trivia.handle_message('trivia answer', user_email="test_email@email.mail",
                                               username="Testa")
@@ -88,7 +92,7 @@ class testTrivia(unittest.TestCase):
                          "ERROR, received incorrect response data type. Expected %s, received %s"
                          % (response, expected_response))
 
-        log.info("Finished Test 101")
+        log.info("Finished Test 102")
 
     def test_103_trivia_answer_command_fails_as_no_answer_available(self):
         """
@@ -98,12 +102,12 @@ class testTrivia(unittest.TestCase):
         log.info("Starting Test 103 trivia answer with no question asked")
 
         with open(self.path_to_file) as json_file:
-            self.assertTrue(type(json_file) is json,
-                            "ERROR, data stored in %s is not json data. Got type %s"
-                            % (self.path_to_file, type(json_file)))
             data = json.load(json_file)
+            self.assertTrue(type(data) is dict,
+                            "ERROR, data stored in %s is not json data. Got type %s"
+                            % (self.path_to_file, type(data)))
 
-        expected_data = {"text": ""}
+        expected_data = {"text":""}
         self.assertEqual(data, expected_data,
                          "ERROR: expected response \"%s\" did not match actual \"%s\""
                          % (expected_data, data))
@@ -125,7 +129,6 @@ class testTrivia(unittest.TestCase):
 
     def tearDown(self):
         super(testTrivia, self).tearDownClass()
-
 
 if __name__ == '__main__':
     unittest.main()

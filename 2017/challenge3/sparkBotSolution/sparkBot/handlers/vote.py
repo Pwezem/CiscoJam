@@ -81,6 +81,8 @@ class Vote(MessageHandler):
         return response
 
     def end_vote(self):
+        if not self.data["options"]:
+            return "**No Vote In Progress**<br>Use start_vote to start a new vote"
         response = "**Votes are in!**<br>"
         options = {}
         for opt in self.data["options"]:

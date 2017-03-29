@@ -25,8 +25,6 @@ class testTrivia(unittest.TestCase):
 
         cls.path_to_file = "testing_files/trivia_test.json"  # test file location
 
-        cls.trivia = Trivia(path_to_file=cls.path_to_file)
-
         cls.utils = Utils()
 
         with open(cls.path_to_file, 'w') as json_file:
@@ -34,6 +32,7 @@ class testTrivia(unittest.TestCase):
 
     def setUp(self):
         super(testTrivia, self).setUp()
+        self.trivia = Trivia(path_to_file=self.path_to_file)
 
     def test_100_trivia_question_returned(self):
         """
@@ -97,7 +96,7 @@ class testTrivia(unittest.TestCase):
                          % (response, expected_response))
 
         self.__class__.score += 15
-        log.info("Finished Test 101")
+        log.info("Finished Test 102")
 
     def test_103_trivia_answer_command_fails_as_no_answer_available(self):
         """

@@ -293,6 +293,22 @@ class testVote(unittest.TestCase):
         self.__class__.score += 5
         self.utils.end_banner("Finished Test 113")
 
+    def test_114_end_vote_no_vote_in_progress(self):
+        """
+            Test to check end_vote returns expected response with no vote in progress.
+            end_vote -> assert response.
+        """
+        self.utils.banner("Starting Test 11 end_vote command with no vote in progress.")
+
+        response = self.vote.handle_message("end_vote", user_email="test_email@email.mail", username="Testa")
+        expected_response = "**No Vote In Progress**<br>Use start_vote to start a new vote"
+        self.assertTrue(response == expected_response,
+                        "Failed, expect response to end_vote was %s. Actual response is %s."
+                        % (expected_response, response))
+
+        self.__class__.score += 5
+        self.utils.end_banner("Finished Test 114")
+
     def vote_x_times_different_users(self, x=2, test="109"):
         self.assert_start_vote(test=test)
 
@@ -359,7 +375,7 @@ class testVote(unittest.TestCase):
     def tearDownClass(cls):
         super(testVote, cls).tearDownClass()
         print "\n\n*******************************"
-        print "Score for tests \"%d/70\"" % cls.score
+        print "Score for tests \"%d/75\"" % cls.score
         print "*******************************"
 
     def tearDown(self):

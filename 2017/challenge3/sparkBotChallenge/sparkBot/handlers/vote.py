@@ -11,15 +11,7 @@ class Vote(MessageHandler):
             self.data = json.load(json_votes)
 
     def handle_message(self, raw_msg, user_email, username):
-        """
-
-            :param raw_msg: The message to preform operations on.
-            :param user_email: email of the user.
-            :param username: username of user who made the request.
-            :return: String or False.
-        """
         if "start_vote" in raw_msg.lower():
-            # Starts a vote
             raw_msg = raw_msg.lower().replace("start_vote", "", 1)
             return self.start_vote(raw_msg)
         if "end_vote" in raw_msg.lower():
@@ -42,92 +34,78 @@ class Vote(MessageHandler):
     def start_vote(self, options):
         """
             This method should start a vote, if a vote is not already in progress.
-            If the user passes voting options use those.
-            if the user passes 0 voting options use the default yes or no.
-            If the user passes 1 voting option, cancel the vote.
-            Write the options to a json file.
+            If there is a vote in progress return a fail string
+            If the user passes voting options use those and return a vote string with the options
+            If the user passes 0 voting options use the default yes or no, and return a vote string with the options
+            If the user passes 1 voting option, cancel the vote and return the correct fail string
+            Remember to write the voting options to a json file.
+            Users should be able to pass camelcase voting options, but they should be stored in lower case.
+            example of how the json should look when a vote is in progress:
+            {
+                'options': ['yes', 'no'],
+                'test_email@email.mail': 'yes',
+                'email_test2@email.mail': 'no'
+            }
 
             HINT: remove "pass", it's a keyword that is not needed.
+            HINT: repeater.py will show you an example of how a the basic structure works.
             HINT: test_vote_handler.py will assist you in this challenge, look at the "expected_response"
-            strings.
+            strings for the fail strings to return.
             HINT: there is also a fully functional bot that you can use to see how the game works.
+            HINT: there are methods that will help you below.
 
-            :return: a vote with options.
+            :return: voting options or a fail string.
             :param options: the voting options
         """
-        response = "**Starting Vote, options:**<br>"
-
-        # Check there is no vote in progress
-        if len(self.data["options"]) is not 0:
-            return "Vote currently in progress!"
-        # start a vote, check the options
-        if len(options) == 0:
-            # No options, go with default options
-            # yes or no
-            self.data["options"] = ["yes", "no"]
-            self.write_json()
-            return response + "Yes or No"
-
-        opts = options.split(",")
-
-        if len(opts) == 1:
-            return "**Cancelling vote:**<br>There was only one option: %s" % options.strip()
-
-        for option in opts:
-            self.data["options"].append(option.strip())
-            response += option.strip() + ", "
-
-        self.write_json()
-        return response[:-2]
+        pass
 
     def vote(self, vote, user_email):
-        vote = vote.strip()
+        """
+            This method should take a users vote.
+            If the vote is one of the options list, record the vote and return a string saying so.
+            If the vote is not one of the stored options return a fail string.
+            If the user passes a blank vote i.e. "<bot_name> vote " return a fail string.
+            If the user tries to vote and there is no vote in progress, return a fail string.
+            If a user who has already voted tries to vote again, return a fail string.
+            Users should be able to vote with camelcase valid options. i.e. YeS or nO
+            example of how the json should look when a vote is in progress:
+            {
+                'options': ['yes', 'no'],
+                'test_email@email.mail': 'yes',
+                'email_test2@email.mail': 'no'
+            }
 
-        if vote is None or vote is "":
-            return "**No Vote**<br>Please cast a vote!"
-        if len(self.data["options"]) is 0:
-            return "No vote in progress. Use start_vote to begin a vote"
-        vote = str(vote)
-        response = "Not a valid vote: \"%s\"" % vote
-        if user_email in self.data:
-            return "You have already voted."
+            HINT: remove "pass", it's a keyword that is not needed.
+            HINT: repeater.py will show you an example of how the basic structure works.
+            HINT: test_vote_handler.py will assist you in this challenge, look at the "expected_response"
+            strings for the fail strings to return.
+            HINT: there is also a fully functional bot that you can use to see how the game works.
+            HINT: there are methods that will help you below.
 
-        for opt in self.data["options"]:
-            if opt.lower() == vote.lower().strip():
-                self.data[user_email] = opt
-                response = "Your vote has been logged."
-                self.write_json()
-                break
-
-        return response
+            :return: a fail string or a successful vote.
+            :param vote: the users vote.
+            :param user_email: email of the user.
+        """
+        pass
 
     def end_vote(self):
-        response = "**Votes are in!**<br>"
-        options = {}
-        for opt in self.data["options"]:
-            options[opt] = 0
+        """
+            This method should end a vote that is in progress, it should count all the votes and
+            list them out in a string. The string should also show which voting option won.
+            If there is no vote in progress then a fail string is returned.
+            If a vote is in progress and no votes are cast a fail string is returned.
+            example of how the json should look when a vote is ended:
+            {
+                'options': []
+            }
 
-        del self.data["options"]
+            HINT: remove "pass", it's a keyword that is not needed.
+            HINT: repeater.py will show you an example of how the basic structure works.
+            HINT: test_vote_handler.py will assist you in this challenge, look at the "expected_response"
+            strings for the fail strings to return.
+            HINT: there is also a fully functional bot that you can use to see how the game works.
+            HINT: there are methods that will help you below.
 
-        if not self.data:
-            return "**No Votes Cast**<br>Ending vote."
-        else:
-            for name in self.data:
-                for opt in options:
-                    if self.data[name] == opt:
-                        options[opt] += 1
-
-            max = 0
-            vote = ""
-            for opt in options:
-                response += "%s: %d<br>" % (opt, options[opt])
-                if options[opt] > max:
-                    max = options[opt]
-                    vote = opt
-
-            response += "**The winner is**<br>%s" % vote
-
-        self.data = {"options": []}
-        self.write_json()
-
-        return response
+            :return: a count of all the votes thus far or a fail string.
+        """
+        pass

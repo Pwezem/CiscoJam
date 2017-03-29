@@ -37,6 +37,7 @@ class Trivia(MessageHandler):
             HINT: request comes back as json.
             HINT: remember to save new answers to the json file.
             HINT: look at the json file to see what it expects.
+            HINT: repeater.py will show you an example of how the basic structure works.
             HINT: test_trivia_handler.py will assist you in this challenge, look at the "expected_response"
             strings.
             HINT: there is also a fully functional bot that you can use to see how the game works.
