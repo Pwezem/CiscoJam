@@ -11,12 +11,12 @@ class testEightball(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         super(testEightball, cls).setUpClass()
-        log.getLogger("testFuturama")
+        log.getLogger("testEightball")
+        cls.utils = Utils()
         with open("test_logs/eightball_test.log", 'w') as test_file:
             test_file.truncate()
         log.basicConfig(filename='test_logs/eightball_test.log', level=log.DEBUG,
                         format='[%(asctime)s]:%(levelname)s: %(message)s')
-        cls.utils = Utils()
 
     def setUp(self):
         super(testEightball, self).setUp()
@@ -49,7 +49,7 @@ class testEightball(unittest.TestCase):
 
     def tearDown(self):
         super(testEightball, self).tearDownClass()
-        self.futurama = None
+        self.eightball = None
 
 if __name__ == '__main__':
     unittest.main()

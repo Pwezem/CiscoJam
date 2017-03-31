@@ -12,6 +12,10 @@ class testNumbers(unittest.TestCase):
     def setUpClass(cls):
         super(testNumbers, cls).setUpClass()
         log.getLogger("testNumbers")
+        with open("test_logs/numbers_test.log", 'w') as test_file:
+            test_file.truncate()
+        log.basicConfig(filename='test_logs/numbers_test.log', level=log.DEBUG,
+                        format='[%(asctime)s]:%(levelname)s: %(message)s')
         cls.utils = Utils()
 
     def setUp(self):
