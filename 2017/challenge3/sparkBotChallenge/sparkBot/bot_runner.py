@@ -5,7 +5,8 @@ import json
 
 config = json.load(open('./config.json'))
 bot = botCore(config['bot_token'])
-print "Booting skynet."
+print "Booting up skynet."
+print "Skynet operational."
 
 
 def remove_mention(msg):
