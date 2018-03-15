@@ -1,5 +1,5 @@
 """
-Welcome to Challege One!
+Welcome to Challenge One!
 Please follow the instructions in the docstrings of each Task method.
 """
 
@@ -32,20 +32,19 @@ def taskOne_reverse_string(stringToBeReversed):
 
     return reversedString
 
-# Complete the method to sort a list of words into alphabetical order.
 def taskTwo_sort_list(unorderedList):
     """
     Write a method that will sort a list of words into alphabetical order,
     and returns the list.
     Hint: Use your sorting algorithm knowledge.
-    No points for using .sorted()
+    No points for using .sort()
     No googling the answer.
     HINT: Compare one string to another and store one in a temp var
     """
     
     # TODO
 
-    return unorderedList
+    return orderedList
 
 def taskThree_filter_palindromes(possible_palindromes):
     """
