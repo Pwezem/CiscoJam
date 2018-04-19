@@ -2,7 +2,7 @@
 # bash script to scp files to multiple machines.
 
 # list of digital ocean servers
-declare -a server_ips=('188.166.150.229' '138.68.187.217' '138.68.183.3' '138.68.187.33' '138.68.181.12' '138.68.182.169' '138.68.177.138' '138.68.185.213' '138.68.183.18' '138.68.187.21')
+declare -a server_ips=('ip-address')
 #Files to transfer.
 declare -a files=('test_futurama_handler.py' 'test_meaningoflife_handler.py' 'test_repeater_handler.py' 'test_vote_handler.py' 'test_eightball_handler.py' 'test_numbers_handler.py' 'test_trivia_handler.py')
 
